@@ -1,0 +1,18 @@
+<div class="row m-0">
+  <figure class="my-app-custom-image-with-desc p-width" *ngFor="let img of shoesImages" >
+    <div class="isotopeSelector shoes fashion ">
+        <div class="overlay">
+                <div class="border-portfolio">
+                        <div class="overlay-background" >
+                            <i class="fa fa-plus" aria-hidden="true" (click)="openImageModalRowDescription(img)" ></i>
+                        </div>
+                        <img [src]="img.modal.img" />
+                </div>
+        </div>
+    </div>
+  </figure>
+  </div>
+  <ks-modal-gallery [id]="200" [modalImages]="shoesImages"
+  [plainGalleryConfig]="customPlainGalleryRowDescConfig" 
+  [buttonsConfig]="buttonsConfigCustom">
+  </ks-modal-gallery>

@@ -1,0 +1,35 @@
+<!-- price-plan Start-->
+<section class="agency pricing price-bg" id="plan">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <owl-carousel-o [options]="pricingcarouselOptions" class="pricing-slider price-margin">
+                    <ng-container *ngFor="let price of pricing">
+                        <ng-template carouselSlide class="item">
+                            <div class="price-container shadows">
+                                <div class="price-feature-container">
+                                    <div class="feature-text">
+                                        <span class="flaticon-{{price.icon}} feature-icon"></span>
+                                        <h3>{{price.package}}</h3>
+                                        <hr class="set-border">
+                                    </div>
+                                    <div class="price-features font-primary">
+                                        <h5 class="price-feature">{{price.feature1}}</h5>
+                                        <h5 class="price-feature">{{price.feature2}}</h5>
+                                        <h5 class="price-feature">{{price.feature3}}</h5>
+                                    </div>
+                                    <div class="price-value">
+                                        <h6 class="price">$<span
+                                                class="large">{{price.price}}</span>/month</h6>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-default btn-white">{{price.btn}}</a>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- price-plan end-->

@@ -1,0 +1,100 @@
+<!-- section start -->
+<section class="agency blog-sec blog-sidebar single_blog_item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-block">
+                    <div class="blog-box">
+                        <div class="overflow-hidden"><img class="img-fluid blur-up lazyload "
+                                src="assets/images/agency/blog/20.jpg" alt="blog"></div>
+                    </div>
+                </div>
+                <div class="blog-text m-t-20">
+                    <h6>{{blogData.date}}</h6><a href="javascript:void()">
+                        <h3 class="blog-head">{{blogData.title}}</h3>
+                    </a>
+                    <div class="blog-divider"></div>
+                    <div class="blog-description">
+                        <p>{{blogData.detail1}}</p>
+                        <p>{{blogData.detail2}}</p>
+                        <h5>{{blogData.name}}</h5>
+                        <h5 class="pull-right">{{blogData.like}} <i class="fa fa-heart-o"></i>{{blogData.comment}} <i
+                                class="fa fa-comments-o"></i>
+                        </h5>
+                    </div>
+                </div>
+                <!-- Comment Sec Start -->
+                <h3 class="page-header-comment">{{blogData.section}}</h3>
+                <div class="comment-list blog_comment">
+                    <div class="comment_sec" *ngFor="let data of blogData.commentSection">
+                        <article class="row">
+                            <div class="" [ngClass]="data.Id==2?'col-11 offset-1':'col-12'">
+                                <div class="blog_center" [ngClass]="data.Id==2?re_comment:''">
+                                    <div>
+                                        <figure class="thumbnail">
+                                            <img [src]="data.commentImg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog_user arrow left">
+                                        <div class="panel-body">
+                                            <div class="text-left">
+                                                <div class="comment-user"><i class="fa fa-user"></i>
+                                                    <h6>{{data.commentName}}</h6>
+                                                </div>
+                                                <div class="comment-date"><i class="fa fa-clock-o"></i>
+                                                    <h6>{{data.commentDate}}</h6>
+                                                </div>
+                                            </div>
+                                            <div class="comment-post">
+                                                <p>
+                                                    {{data.commentDescription}}
+                                                </p>
+                                            </div>
+                                            <a href="javascript:void()" class="link-btn"><i class="fa fa-reply"></i>
+                                                {{data.commentReplayTag}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Comment Sec End -->
+                <div class="quote_2 comment_form_sec">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 quote_form">
+                                <hr />
+                                <h3 class="page-header-comment mb-4">Leave you comment :</h3>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Name :</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Name"
+                                                required="">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Email :</label>
+                                            <input type="email" class="form-control" id="inputEmail4"
+                                                placeholder="Enter Your Email" required="">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="exampleTextarea">Message :</label>
+                                            <textarea class="form-control msg_coment" id="exampleTextarea" rows="3"
+                                                placeholder="Leave a Comment" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-default primary-btn m-t-20 radius-0" href="javascript:void()">
+                                        Post Comment
+                                        <span class="con_btn_eff"></span>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section start -->

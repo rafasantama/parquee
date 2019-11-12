@@ -1,0 +1,17 @@
+<!-- client section -->
+<section id="client-box" class="saas1 client brand-slider">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class=" col-md-12 client-box text-center">
+                <owl-carousel-o [options]="clientcarouselOptions" class="saas-brand">
+                    <ng-container *ngFor="let client of clients">
+                        <ng-template carouselSlide>
+                            <img [src]="client.img" alt="client-slider" class="img-fluid">
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end client section -->

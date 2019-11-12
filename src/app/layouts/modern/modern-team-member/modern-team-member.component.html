@@ -1,0 +1,39 @@
+<!--team start-->
+<section class="app2 team-section p-t-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text"><span>our team</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">our team member</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center teams" *ngFor="let data of users">
+                <div class="our-team">
+                    <div class="set-relative">
+                        <div class="border-around overflow-hide m-auto">
+                            <div class="set-relative overflow-hide">
+                                <img [src]="data.img" alt="" class="img-fluid team">
+                                <div class="overlay-team set-abs">
+                                    <img src="assets/images/app_landing2/team/hover-wave.png" alt=""
+                                         class="img-fluid wave">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-relative set-border">
+                        <div class="set-abs top-0 borders"></div>
+                    </div>
+                    <div class="employee">
+                        <h4 class="e-name text-center">{{data.name}}</h4>
+                        <h6 class="post text-center ">{{data.designation}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--team end-->

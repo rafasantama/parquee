@@ -1,0 +1,33 @@
+<!--team start-->
+<section class="app2 team p-t-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text"><span>Client Review</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">Our Clients Love Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="teamcarouselOptions" class="team-slider">
+                    <ng-container *ngFor="let team of teams">
+                        <ng-template carouselSlide class="item">
+                            <div class="team-container">
+                                <img [src]="team.img" alt="" class="img-fluid members">
+                                <div class="text-center">
+                                    <h5 class="name">{{team.name}}</h5>
+                                    <h6 class="post ">{{team.designation}}</h6>
+                                    <p class="team-para">{{team.description}}</p>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!--team end-->

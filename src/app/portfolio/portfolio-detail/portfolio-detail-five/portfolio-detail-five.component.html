@@ -1,0 +1,98 @@
+<!-- section start -->
+<div class="agency">
+    <section class="videos portfolio-section port-col zoom-gallery detail-page fullwidth-portfolio">
+      <div class="container p-0">
+          <div class="row">  
+              <div class="col-12 m-b-50">
+                  <img alt="" class="img-fluid m-b-20" src="assets/images/inner-page/blogs/1.jpg">
+                  <img alt="" class="img-fluid" src="assets/images/inner-page/blogs/2.jpg">
+              </div>
+              <div class="col-md-12  m-b-50">
+                  <div class="row m-0 ">
+                    <div class="col-md-6">
+                      <div class="portfolio-detail">
+                        <h3 class="detail-head">project detail</h3>
+                        <div class="detail-container d-flex p-t-0">
+                          <div class="portfolio-left">
+                            <h5 class="text-left">client :</h5>
+                          </div>
+                          <div class="portfolio-right">
+                            <h5>john doe</h5>
+                          </div>
+                        </div>
+                        <div class="detail-container d-flex">
+                          <div class="portfolio-left">
+                            <h5 class="text-left">date :</h5>
+                          </div>
+                          <div class="portfolio-right">
+                            <h5>22 Nov 2018</h5>
+                          </div>
+                        </div>
+                        <div class="detail-container d-flex">
+                          <div class="portfolio-left">
+                            <h5 class="text-left">link :</h5>
+                          </div>
+                          <div class="portfolio-right">
+                            <h5>www.abcd.com</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="portfolio-detail">
+                        <h3 class="detail-head">about project</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s, when
+                          an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="text-right m-t-10">
+                          <a href="javascript:void(0)" class="btn btn-default primary-btn radius-0">visit project</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+     
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row">  
+              <div class="col-12">
+                  <owl-carousel-o [options]="detailOneCarousel1" class="portfolio-slider">
+                    <ng-container *ngFor="let image of allImages">
+                      <ng-template carouselSlide>
+                        <div class="item">
+                          <div class="isotopeSelector">
+                            <div class="overlay">
+                              <div class="border-portfolio">
+                                <div class="overlay-background">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </div>
+                                <img class="img-fluid" alt="" [src]="image.img">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ng-container>
+                  </owl-carousel-o>
+                </div>
+        </div>
+      </div>
+      <!-- pagination Start -->
+      <div class="pagination_sec">
+        <div class="content_detail__pagination cdp">
+          <ul>
+            <li><a href="javascript:void(0)" class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="javascript:void(0)" class="active cdp_i">1</a></li>
+            <li><a href="javascript:void(0)" class="cdp_i">2</a></li>
+            <li><a href="javascript:void(0)" class="cdp_i">3</a></li>
+            <li><a href="javascript:void(0)" class="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- pagination End -->
+    </section>
+  </div>
+  <!-- Section ends -->

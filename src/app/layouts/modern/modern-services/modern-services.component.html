@@ -1,0 +1,31 @@
+<!--services start-->
+<section class="app2 services p-t-0" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text text-uppercase"><span>feature</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">Powerful Features </h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 service-container" *ngFor="let data of services">
+                <div class="service text-center">
+                    <div class="img-block">
+                        <img [src]="data.img" alt=""
+                             class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">{{data.title}}</h4>
+                        <p class="text-center">{{data.description}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--services end-->

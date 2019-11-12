@@ -1,0 +1,13 @@
+<!-- price filter start here -->
+<div class="collection-collapse-block border-0 open">
+    <h3 class="collapse-block-title">price</h3>
+    <div class="collection-collapse-block-content">
+        <div class="collection-brand-filter">
+            <div class="mt-5">
+                 <form [formGroup]="sliderForm">
+                 <ng5-slider formControlName="sliderControl"  [options]="options" (userChange)="onUserChange()"></ng5-slider>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<!--screen-shot start-->
+<section class="app2 screenshot p-t-0" id="screen-shot">
+ <div class="animated-bg"><i></i><i></i><i></i></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text"><span>screen shot</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">screen shot</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row set-relative">
+            <div class="col-12">
+                <!-- OwlCarousel -->
+                    <owl-carousel-o [options]="screenshotscarouselOptions" class="screenshot-slider">
+                        <ng-container *ngFor="let screenshot of screenshots">
+                            <ng-template carouselSlide class="item">
+                                 <img [src]="screenshot.img" alt="" class="img-fluid">
+                          </ng-template>
+                        </ng-container>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+</section>
+<!--screen-shot end-->

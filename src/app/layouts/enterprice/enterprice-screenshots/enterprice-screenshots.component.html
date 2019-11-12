@@ -1,0 +1,36 @@
+<!-- screenshot section Start-->
+
+<section class="app1 screenshot bg-theme" id="screenshot">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 m-b-10">
+              <div class="title title1">
+                  <div class="main-title">
+                      <h2 class="text-white">Screen Shot</h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="text-white para">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.
+                          Lorem Ipsum has been</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row set-relative">
+          <div class="col-12">
+              <!-- Swiper -->
+              <div class="swiper-container" [swiper]="config" [(index)]="index">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide" *ngFor="let slide of slides">
+                          <img alt="" [src]="slide.img" class="img-fluid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="set-abs screen-container">
+              <img src="assets/images/app_landing1/screen-shot/mockup-2.png" alt="" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</section>
+<!-- screenshot section end-->

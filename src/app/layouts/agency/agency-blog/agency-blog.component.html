@@ -1,0 +1,51 @@
+<!-- blog section start-->
+<section class="agency blog blog-bg" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="title">
+                    <div class="main-title">
+                        <h2 class="text-capitalize text-center">latest blog</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of blogs">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain">
+                                    <img [src]="blog.img" alt="" class="img-fluid">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info">
+                                                <div class="m-b-10">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-clock-o"
+                                                            aria-hidden="true"></i>
+                                                        <h6 class="m-r-25 font-blog">{{blog.date}}</h6>
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                        <h6 class="font-blog">{{blog.type}}</h6>
+                                                    </div>
+                                                </div>
+                                                <h5 class="blog-head">{{blog.title}}</h5>
+                                                <p class="para2">{{blog.description}}</p>
+                                                <div class="m-t-20"><a href="javascript:void(0)" class="text-uppercase">{{blog.btn}}</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog section end-->

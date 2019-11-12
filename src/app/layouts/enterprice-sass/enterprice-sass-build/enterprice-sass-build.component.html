@@ -1,0 +1,49 @@
+<!-- build section start -->
+<section class="saas1 build-bg">
+    <div class="build-right-slider">
+            <owl-carousel-o [options]="sync2" class="sync2" #owlCar (changed)="owlCar1.to($event.startPosition.toString())" (dragging)="owlCar1.to($event.data.startPosition.toString())"> 
+                    <ng-container *ngFor="let slide of buildsync; index as i">
+                        <ng-template carouselSlide [id]="i" [dotContent]="owlCar1.to(i)">
+                                <img [src]="slide.img" alt="work-slider" class="img-fluid work-slide">
+                        </ng-template>
+                    </ng-container>
+            </owl-carousel-o>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                    <owl-carousel-o [options]="sync1" class="overflow-hidden sync1"  #owlCar1 (dragging)="owlCar.to($event.data.startPosition.toString())">                    
+                        <ng-container  *ngFor="let slide of navsync; index as i">
+                        <ng-template carouselSlide [id]="i">
+                            <div class="build-box" >
+                                <h3 class="build-head text-white"><span class="theme-color">Let’s </span>Build Something
+                                    Great. Together</h3>
+                                <p>{{slide.data}}</p>
+                                <ul>
+                                    <li><img src="assets/images/saas1/build-.png" alt="icon">We provide free initial
+                                        consultation
+                                        and support.
+                                    </li>
+                                    <li><img src="assets/images/saas1/build-.png" alt="icon">We work with some of the
+                                        most
+                                        successful businesses
+                                    </li>
+                                    <li><img src="assets/images/saas1/build-.png" alt="icon">We Are Entrepreneurs &
+                                        Innovators of
+                                        Website Building
+                                    </li>
+                                    <li><img src="assets/images/saas1/build-.png" alt="icon">We’d love to hear from you
+                                        to
+                                        discuss
+                                        web design.
+                                    </li>
+                                </ul>
+                            </div>
+                        </ng-template>
+                   </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- end build section-->

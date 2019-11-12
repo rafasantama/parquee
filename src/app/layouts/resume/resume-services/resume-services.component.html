@@ -1,0 +1,32 @@
+<!--services start-->
+<section class="resume services bg-pink">
+    <div class="container">
+        <div class="row">
+            <div class=" offset-md-2 col-md-8">
+                <div class="title title2">
+                    <h6 class="font-primary borders main-text text-uppercase"><span>details</span></h6>
+                    <div class="sub-title">
+                        <div class="">
+                            <h2 class="title-text">services & experience</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6" *ngFor="let data of service">
+                <div class="service text-center bg-white">
+                    <div class="img-block">
+                        <img [src]="data.img" alt="" class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">{{data.type}}</h4>
+                        <p>Unlike team chat apps, Flow is designed to help your team stay focused by keeping relevant
+                            and actionable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--services start-->

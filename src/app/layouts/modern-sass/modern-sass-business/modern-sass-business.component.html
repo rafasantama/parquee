@@ -1,0 +1,29 @@
+<!--business css start-->
+<section class="saas2 bg-gradient quick-sol">
+  <div class="container set-center-div">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="offers-container">
+                  <h3 class="text-white offer-heading-text">We Offer Quick & Powerful
+                      Business Solution</h3>
+                  <div class="bottom-border">
+                  </div>
+                  <div class="offers-content" *ngFor="let data of business">
+                      <div class="d-flex">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div>
+                              <h4 class="offer-main-text text-white">{{data.title}}</h4>
+                              <p class="offer-sub-text text-white">{{data.description}}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="center-text side-img">
+              <img alt="" src="assets/images/saas2/we-offer/img.png" class="img-fluid" data-tilt data-tilt-max="3"
+                   data-tilt-speed="400" data-tilt-perspective="500">
+          </div>
+      </div>
+  </div>
+</section>
+<!--business css end-->

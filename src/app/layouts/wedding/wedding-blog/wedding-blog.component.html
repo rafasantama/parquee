@@ -1,0 +1,100 @@
+<!-- blog section Start-->
+<section class="wedding blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <img src="assets/images/wedding-img/bottom.png" alt=""
+                         class="img-fluid title-img">
+                    <div class="main-title">
+                        <h2 class="gradient-text">Our Beautiful Story</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
+                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div></div>
+        <div class="row">
+            <div class="col-12">
+              <owl-carousel-o [options]="blagCarouselOptions">
+                <ng-container *ngFor="let blog of blogs">
+                  <ng-template carouselSlide class="item d-flex">
+                              <div class="d-flex blog-container">
+                                  <div class="row">
+                                      <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                          <div class="set-skew">
+                                              <img [src]="blog.img" alt="" class="img-fluid">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                          <div class="center-text">
+                                              <div>
+                                                  <h3 class="blog-text gradient-text"> {{blog.text}}</h3>
+                                                  <h6 class="blog-date">{{blog.date}}</h6>
+                                                  <h6 class="blog-place">{{blog.place}}</h6>
+                                                  <p class="blog-para">{{blog.description}}</p>
+                                                  <button class="btn btn-blog">{{blog.btn}}</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                  </ng-template>
+                </ng-container>
+                  </owl-carousel-o>
+                    <!-- <div class="item d-flex">
+                        <div class="d-flex blog-container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="set-skew">
+                                        <img src="assets/images/wedding-img/blog/2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="center-text">
+                                        <div>
+                                            <h3 class="blog-text gradient-text"> The Proposal</h3>
+                                            <h6 class="blog-date">08/14/2015</h6>
+                                            <h6 class="blog-place">Newyork</h6>
+                                            <p class="blog-para">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit,…</p>
+                                            <button class="btn btn-blog">read more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item d-flex">
+                        <div class="d-flex blog-container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="set-skew">
+                                        <img src="assets/images/wedding-img/blog/3.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="center-text">
+                                        <div>
+                                            <h3 class="blog-text gradient-text"> The Proposal</h3>
+                                            <h6 class="blog-date">08/14/2015</h6>
+                                            <h6 class="blog-place">Newyork</h6>
+                                            <p class="blog-para">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit,…</p>
+                                            <button class="btn btn-blog">read more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+</section>
+<!-- blog section end-->

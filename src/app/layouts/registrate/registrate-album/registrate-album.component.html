@@ -1,0 +1,46 @@
+    <!-- <div class="col-md-3 col-sm-6 speker-container text-white" *ngFor="let data of experts">
+        <div class="text-white text-center">
+            <div class="team-img">
+                <img [src]="data.img" alt="" class="img-fluid">
+                <div class="overlay"></div>
+                <div class="social">
+                    <ul>
+                        <li><a href="javascript:void()"><i class="fa fa-linkedin center-content" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="employee">
+                <h5 class="e-name text-center text-white">{{data.name}}</h5>
+                <h6 class="post text-center text-white">{{data.designation}}</h6>
+            </div>
+        </div>
+    </div> -->
+<section class="music album">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title4">
+                    <div class="main-title">
+                        <h2>Proceso de Incubación</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>Realizamos un exhaustivo proceso de selección identificando dentro del banco de iniciativas las empresas con mayor potencial de impacto.
+                             Se realiza un reporte a las instituciones de educación superior sobre las iniciativas inscritas y emprendimientos seleccionados. 
+                            Al comenzar el proceso se realiza un diagnostico a los seleccionados identificando sus fortalezas debilidades por medio del cual se propone un plan de intervención.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let data of experts">
+                <div class="album-list overlay-box text-center">
+                    <!-- <h5 class="text-uppercase list-head">{{data.name}}</h5> -->
+                    <div>
+                        <h6 class="item-sublist">{{data.name}}</h6>
+                        <br/>
+                        <img [src]="data.img" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

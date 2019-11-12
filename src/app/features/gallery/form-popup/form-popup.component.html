@@ -1,0 +1,87 @@
+<!-- Login-popup section start -->
+<section class="login-popup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="text-center">
+                    <h2 class="m-b-20">click here for the form popup</h2>
+                    <a class="popup-with-form btn btn-default primary-btn" (click)="openVerticallyCentered(content)">click here
+                    </a>
+                    <ng-template #content let-modal>
+                                  <div class="login-modal">
+                                    <div class="modal-header">
+                                        <button aria-label="Close" (click)="modal.dismiss('Cross click')" class="close" data-dismiss="modal" type="button">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="nav nav-pills mb-5" id="pills-tab-login" role="tablist">
+                                            <li class="nav-item">
+                                                <a aria-controls="pills-home" aria-selected="true" class="nav-link active" data-toggle="pill"
+                                                   href="#pills-home" id="pills-home-tab" role="tab">Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a aria-controls="pills-profile" aria-selected="false" class="nav-link" data-toggle="pill"
+                                                   href="#pills-profile" id="pills-profile-tab" role="tab">Sign up</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tab-Content">
+                                            <div aria-labelledby="pills-home-tab" class="tab-pane fade show active" id="pills-home"
+                                                 role="tabpanel">
+                                                <!-- login-form -->
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="inputEmail">Email</label>
+                                                            <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="inputPassword05">Password</label>
+                                                            <input class="form-control" id="inputPassword05" placeholder="Password"
+                                                                   type="password">
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn primary-btn btn-default text-uppercase">Sign up</button>
+                                                </form>
+                                                <!-- end login form -->
+                                            </div>
+                                            <div aria-labelledby="pills-profile-tab" class="tab-pane fade" id="pills-profile"
+                                                 role="tabpanel">
+                                                <!-- sign up form -->
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="inputEmail05">Email</label>
+                                                            <input class="form-control" id="inputEmail05" placeholder="Email" type="email">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPassword04">Password</label>
+                                                            <input class="form-control" id="inputPassword04" placeholder="Password"
+                                                                   type="password">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Confirm Password</label>
+                                                            <input class="form-control" id="inputPassword4" placeholder="Password"
+                                                                   type="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputAddress">Address</label>
+                                                        <input class="form-control" id="inputAddress" placeholder="1234 Main St"
+                                                               type="text">
+                                                    </div>
+                    
+                                                    <button class="btn btn-default primary-btn text-uppercase">log in</button>
+                                                </form>
+                                                <!-- end sign up form -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                      </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login-popup section end -->

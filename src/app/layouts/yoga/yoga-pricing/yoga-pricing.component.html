@@ -1,0 +1,41 @@
+<!-- pricing section start-->
+<section class="yoga pricing" id="plan">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <div class="title title2">
+                  <h2 class="">Gifts & Cards</h2>
+                  <img src="assets/images/yoga-img/logo/wave-blue.png" alt="" class="img-fluid">
+              </div>
+          </div>
+          <div class="col-md-10 offset-md-1 col-12">
+            <owl-carousel-o [options]="priceCarousel" class="pricing-slider">
+              <ng-container *ngFor="let price of prices">
+                <ng-template carouselSlide class="item">
+                    <div class="price-container price-margin shadows text-center">
+                        <div class="service-feature ">
+                            <div class="feature-text">
+                                <img [src]="price.img" alt="" class="image-top">
+                                <h3 class="text-white feature-text-heading text-center">{{price.heading}}</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="price-feature-container ">
+                                <div class="price-features">
+                                    <h5 class="price-feature text-center">{{price.features1}} </h5>
+                                    <h5 class="price-feature text-center">{{price.features2}}</h5>
+                                    <h5 class="price-feature text-center">{{price.features3}} </h5>
+                                </div>
+                                <div class="price-value"><h6 class="price text-center">$<span class="large">{{price.price}}</span>/month</h6></div>
+                                <a href="javascript:void()" class="btn btn-default btn-gradient">{{price.btn}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+         </div>
+      </div>
+  </div>
+</section>
+<!-- pricing section end-->

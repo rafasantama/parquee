@@ -1,0 +1,29 @@
+<app-header  *ngIf="url!='/features/header-transparent' && 
+                    url!='/features/header-light' && 
+                    url!='/features/header-dark' && 
+                    url!='/features/header-right-navigation' && 
+                    url!='/features/header-center-logo'"
+                    [ngClass]="url == '/features/breadcrumb-dark' ||
+                               url == '/features/breadcrumb-bg' ||
+                               url == '/features/breadcrumb-parallex-bg' ||
+                               url == '/features/breadcrumb-gallery' ||
+                               url == '/features/breadcrumb-video' ? 'white-header' : ''">
+</app-header>
+<app-breadcrumb></app-breadcrumb>
+
+<router-outlet></router-outlet>
+
+<app-footer  *ngIf="url!='/features/header-transparent' 
+                    && url!='/features/header-light' 
+                    && url!='/features/header-dark' 
+                    && url!='/features/header-right-navigation' 
+                    && url!='/features/header-center-logo'
+                    && url!='/features/footer-default'
+                    && url!='/features/footer-light'
+                    && url!='/features/footer-dark'
+                    && url!='/features/footer-light2'
+                    && url!='/features/footer-dark2'
+                    && url!='/features/footer-light3'
+                    && url!='/features/footer-dark3'">
+</app-footer>
+<app-tap-to-top></app-tap-to-top>

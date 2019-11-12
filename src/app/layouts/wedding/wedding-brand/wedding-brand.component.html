@@ -1,0 +1,35 @@
+<!-- brand section Start-->
+<section class="wedding brand-sliders">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <img src="assets/images/wedding-img/bottom.png" alt=""
+                         class="img-fluid title-img">
+                    <div class="main-title">
+                        <h2 class="gradient-text">gift registry</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
+                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+              <owl-carousel-o [options]="brandCarouselOptions" class="brand-slider">
+                <ng-container *ngFor="let brand of brands">
+                  <ng-template carouselSlide class="item">
+                      <a href="javascript:void(0)">
+                          <img [src]="brand.img" alt="" class="img-fluid wedding-brand">
+                      </a>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</section>
+<!-- brand section end-->

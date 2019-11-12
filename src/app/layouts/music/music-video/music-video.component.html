@@ -1,0 +1,55 @@
+<!-- video section Start-->
+<section class="music bg-video format">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/images/music/singer.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class=" center-text">
+                    <div>
+                        <div class="format-small-text">
+                            <h6 class="gradient-text hash-video">#video</h6>
+                        </div>
+                        <div class="format-head-text">
+                            <h3 class="about-font-header">Anet Licker</h3>
+                        </div>
+                        <div class="format-sub-text">
+                            <div class="sub-heading">
+                                <h6 class="sub-small-text">Performs in Slide Spring Tour</h6>
+                            </div>
+                            <p class="text-white sub-para">The page builder elements that we’ve created for you, make the
+                            website building process easy and fun.</p>
+                        </div>
+                        <div class="m-b-40">
+                            <div class="link-horizontal">
+                                <ul>
+                                    <li>
+                                        <a class="button icon-btn d-flex" (click)="openVerticallyCentered(content)" >
+                                            <i class="fa fa-play video-icon center-content m-0"  aria-hidden="true"></i>
+                                            <ng-template #content let-modal>
+                                                    <div class="modal-body video-modal">
+                                                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                                                    </div>
+                                                  </ng-template>
+                                            <div class="watch-now center-content">
+                                                <h6 class="watch">Watch Now</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a href="javascript:void()"><h6 class="watch">see all video<i class="fa fa-arrow-right m-l-15" aria-hidden="true"></i></h6></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- video section end-->

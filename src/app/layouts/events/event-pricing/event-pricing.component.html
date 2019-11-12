@@ -1,0 +1,49 @@
+<!--pricing section start-->
+<section class="event pricing set-relative bg bg-img bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2 class=" text-white">our pricing plan</h2>
+                    </div>
+                    <div class="sub-title">
+                        <P class="text-white">Register now and reserve your seat for this
+                            <span>year's unice,</span> the largest <span>web development</span> and online marketing
+                            <span>conference in UK,</span> covering everything you need to know in order to develop a
+                            successful online business.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="pricingcarouselOptions" class="pricing-slider">
+                    <ng-container *ngFor="let price of pricing">
+                        <ng-template carouselSlide class="item">
+                            <div class="price-container shadows bg-white text-center">
+                                <div class="price-feature-container set-relative">
+                                    <div class="feature-text">
+                                        <span class="flaticon-{{price.icon}} feature-icon"></span>
+                                        <h4 class="feature-text-heading bold text-uppercase font-primary">
+                                            {{price.package}}</h4>
+                                        <hr class="set-border">
+                                    </div>
+                                    <div class="price-features font-primary">
+                                        <h6 class="price text-center-feature">{{price.feature1}}</h6>
+                                        <h6 class="price text-center-feature">{{price.feature2}}</h6>
+                                        <h6 class="price text-center-feature">{{price.feature3}}r</h6>
+                                    </div>
+                                    <div class="price-value">
+                                        <h6 class="price text-center font-primary">$<span
+                                                class="large font-primary">{{price.price}}</span>/month</h6>
+                                    </div>
+                                    <a href="javascript:void()" class="btn btn-default back-white">{{price.btn}}</a>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!--pricing section end-->

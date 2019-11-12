@@ -1,0 +1,13 @@
+<div class="vertical-slider">
+<owl-carousel-o [options]="centerdslideOption" #owlCar (mousewheel)="slideTo($event)">
+        
+    <ng-container *ngFor="let data of carouselData">
+      <ng-template carouselSlide>
+        <section class="prtfolio-full-screen p-0">
+            <img [src]="data.img" alt="" class="img-fluid img-to-bg">
+        </section>
+      </ng-template>
+    </ng-container>
+    
+  </owl-carousel-o>
+</div>

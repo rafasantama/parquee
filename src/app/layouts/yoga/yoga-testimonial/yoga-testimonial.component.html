@@ -1,0 +1,32 @@
+
+<!-- testimonial section Start-->
+<section class="yoga testimonial bg img-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title title2">
+                    <h2 class="text-white">what people say</h2>
+                    <img src="assets/images/yoga-img/logo/bottom-curve.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+              <owl-carousel-o [options]="testimonalCarousel" class="testimonial-slider">
+                <ng-container *ngFor="let testimonial of testimonials">
+                  <ng-template carouselSlide class="">
+                      <img src="assets/images/gym/testimonial/quote.png" alt="" class="img-fluid m-auto">
+                      <div class="text-center testimonial-info">
+                          <p class="testimonial-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to.</p>
+                          <img [src]="testimonial.img" alt="" class="img-fluid m-auto">
+                          <div class="testimonial-name m-t-10"><h4 class="text-white name">Alan Lakor</h4></div>
+                          <div class="testimonial-post"><h6 class="text-white post">CEO OF SC.</h6></div>
+                      </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+             </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial section end-->

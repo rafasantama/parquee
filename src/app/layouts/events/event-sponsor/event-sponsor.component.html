@@ -1,0 +1,46 @@
+<!--sponsor section start-->
+<section class="event sponsor set-relative">
+    <div class="circle">
+    </div>
+    <div class="container set-margin">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2><span>Aliados</span></h2>
+                    </div>
+                    <div class="sub-title">
+                        <P>El Parque del Emprendimientos opera gracias a una
+                            <span>estrategica red de aliados</span> articulados a lo largo del <span>ecosystema de emprendimiento en Medellín</span> posicionandose como
+                            <span>una de las incubadoras top a nivel mundial</span>, impulsando la red de emprendimientos de alto impacto de la ciudad</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2>Lideran</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 sponsor-img" *ngFor="let data of lideran">
+                <div class="text-center">
+                    <a href="javascript:void()"><img [src]="data.img" alt="" class="center img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2>Apoyan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 sponsor-img" *ngFor="let data of apoyan">
+                <div class="text-center">
+                    <a href="javascript:void()"><img [src]="data.img" alt="" class="center img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--sponsor section end-->

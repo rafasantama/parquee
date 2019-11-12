@@ -1,0 +1,109 @@
+
+<!-- section start -->
+<section class="portfolio-section port-col zoom-gallery fullwidth-portfolio masonray-sec">
+    <div class="filter-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-container isotopeFilters">
+                        <ul class="list-inline filter">
+                                <li [ngClass]="{'active': customizer == 'all' }"><a (click)="openGallery('all')">All </a></li>
+                                <li [ngClass]="{'active': customizer == 'fashion' }"><a (click)="openGallery('fashion')">Fashion</a></li>
+                                <li [ngClass]="{'active': customizer == 'bags' }"><a (click)="openGallery('bags')">Bags</a></li>
+                                <li [ngClass]="{'active': customizer == 'shoes' }"><a (click)="openGallery('shoes')">Shoes</a></li>
+                                <li [ngClass]="{'active': customizer == 'watch' }"><a (click)="openGallery('watch')">Watch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="isotopeContainer row">
+                <ng-container *ngIf="customizer=='all'" >
+                        <figure class="col-lg-6 col-md-4 col-sm-6 isotopeSelector shoes" *ngFor="let img of allImages">
+                            <div class="isotopeSelector shoes fashion ">
+                                <div class="overlay">
+                                        <div class="border-portfolio">
+                                                <div class="overlay-background" >
+                                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                                </div>
+                                                <img [src]="img.img" class="img-fluid" />
+                                        </div>
+                                </div>
+                              </div>
+                        </figure>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='fashion'" >
+                            <figure class="col-lg-6 col-md-4 col-sm-6 isotopeSelector shoes" *ngFor="let img of fashionImages" >
+                                <div class="isotopeSelector shoes fashion ">
+                                    <div class="overlay">
+                                            <div class="border-portfolio">
+                                                    <div class="overlay-background" >
+                                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img [src]="img.img" class="img-fluid" />
+                                            </div>
+                                    </div>
+                                </div>
+                            </figure>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='bags'" >
+                            <figure class="col-lg-6 col-md-4 col-sm-6 isotopeSelector shoes" *ngFor="let img of bagsImages" >
+                                <div class="isotopeSelector shoes fashion ">
+                                    <div class="overlay">
+                                            <div class="border-portfolio">
+                                                    <div class="overlay-background" >
+                                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img [src]="img.img" class="img-fluid" />
+                                            </div>
+                                    </div>
+                                </div>
+                            </figure>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='shoes'" >
+                            <figure class="col-lg-6 col-md-4 col-sm-6 isotopeSelector shoes" *ngFor="let img of shoesImages" >
+                                <div class="isotopeSelector shoes fashion ">
+                                    <div class="overlay">
+                                            <div class="border-portfolio">
+                                                    <div class="overlay-background" >
+                                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img [src]="img.img" class="img-fluid" />
+                                            </div>
+                                    </div>
+                                </div>
+                            </figure>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='watch'" >
+                            <figure class="col-lg-6 col-md-4 col-sm-6 isotopeSelector shoes" *ngFor="let img of watchImages" >
+                                <div class="isotopeSelector shoes fashion ">
+                                    <div class="overlay">
+                                            <div class="border-portfolio">
+                                                    <div class="overlay-background" >
+                                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                                    </div>
+                                                    <img [src]="img.img" class="img-fluid" />
+                                            </div>
+                                    </div>
+                                </div>
+                            </figure>
+                    </ng-container>
+        </div>
+    </div>
+    <!-- pagination Start -->
+    <div class="pagination_sec">
+        <div class="content_detail__pagination cdp">
+            <ul>
+                <li><a href="javascript:void(0)" class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)" class="active cdp_i">1</a></li>
+                <li><a href="javascript:void(0)" class="cdp_i">2</a></li>
+                <li><a href="javascript:void(0)" class="cdp_i">3</a></li>
+                <li><a href="javascript:void(0)" class="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- pagination End -->
+</section>
+<!-- Section ends -->

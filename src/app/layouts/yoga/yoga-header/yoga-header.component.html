@@ -1,0 +1,43 @@
+<!-- header Start-->
+<section class="yoga header" id="home">
+  <owl-carousel-o [options]="yogaCarouselOptions" class="yoga-content overflow-hidden yoga-slider">
+    <ng-container *ngFor="let yoga of yogas">
+      <ng-template carouselSlide class="item">
+              <div class="yogas bg">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="center-text">
+                                  <div class="bottom-0 set-abs girl center-content">
+                                      <img src="assets/images/yoga-img/girl-1050x640.png" class="img-fluid girl-img" alt="">
+                                  </div>
+                                  <div class="text-right">
+                                      <div class="row">
+                                          <div class="col-lg-7">
+                                              <div class="right-way">
+                                                  <div class="header-text"><h1>right way <span class="bold-text">yoga</span></h1></div>
+                                                  <div class="header-sub-text">
+                                                      <p class="text-white">Lorem Ipsum is simply dummy text of the printing and
+                                                          typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                          text ever since the 1500s</p>
+                                                  </div>
+                                                  <a class=" btn btn-default back-white border-not">read more</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="animation-circle-inverse">
+                              <i></i>
+                              <i></i>
+                              <i></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+ </section>
+<!-- header end-->

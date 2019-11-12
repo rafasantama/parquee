@@ -1,0 +1,114 @@
+<!-- header Start-->
+<section class="music header" id="header">
+    <div class="music-content">
+        <div class="music-bg bg bg-shadow-top">
+            <div class="text-center w-100" aTilt data-tilt data-tilt-max="3" data-tilt-speed="400"
+                 data-tilt-perspective="400">
+                <div class="img-height">
+                    <img src="assets/images/music/man.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="circle">
+            <img src="assets/images/music/icons/aero.png" alt="" class="img-fluid">
+        </div>
+        <h1>2019 <span class="">18</span></h1>
+    </div>
+    <div class="left-side">
+        <h6 class="follow-text">follow us</h6>
+        <ul>
+            <li><a href="javascript:void()"><img src="assets/images/music/icons/insta.png" alt="" class="img-fluid"></a></li>
+            <li><a href="javascript:void()"><img src="assets/images/music/icons/twitter.png" alt="" class="img-fluid"></a></li>
+            <li><a href="javascript:void()"><img src="assets/images/music/icons/facebook.png" alt="" class="img-fluid"></a></li>
+        </ul>
+    </div>
+    <div class="container music-container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="play-bg d-flex">
+                    <div class="song-text-container h-100">
+                        <div class="d-flex h-100">
+                            <div class="center-img">
+                                <img src="assets/images/music/icons/girl.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="song-text">
+                                <h5 class="text-white song-head">Latest Song</h5>
+                                <h6 class="text-white song-sub-head">Zrial doj</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play-setting m-auto">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                            <div class="jp-type-playlist">
+                                <div class="jp-gui jp-interface p-0 d-flex">
+                                    <div class="jp-controls"><button class="jp-play m-r-15" role="button" tabindex="0"></button></div>
+                                    <a (click)="sideBar()"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="side-section" class="music side-section" [style.display]="sideBarDispaly">
+    <div class="jp-jplayer"></div>
+    <div class="jp-audio" role="application" aria-label="media player">
+        <div class="jp-type-playlist">
+            <div class="jp-gui jp-interface">
+                <div class="side-player">
+                    <div class="text-center">
+                        <div class="gradient-block">
+                            <div class="animation-circle-inverse">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <h6 class="now-play">now playing</h6>
+                        </div>
+                        <img src="assets/images/music/icons/girl-side.jpg" alt="" class="img-fluid girls">
+                        <div class="author-text">
+                            <h5 class="m-b-10 song-text">Latest Song</h5>
+                            <h6 class="song-sub-text">Zrial doj</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar"></div>
+                            </div>
+                        </div>
+                        <div class="jp-time-holder">
+                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        </div>
+                        <div class="jp-controls">
+                            <div class="button-container">
+                                <button class="jp-previous" role="button" tabindex="0"></button>
+                                <button class="jp-play" role="button" tabindex="0"></button>
+                                <button class="jp-next" role="button" tabindex="0"></button>
+                            </div>
+                            <button class="btn-sidebar" (click)="sideBar()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div class="jp-playlist">
+                            <ul>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="jp-no-solution">
+                        <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your
+                        <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header end-->

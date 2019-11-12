@@ -1,0 +1,23 @@
+<!-- Login-popup section start -->
+<section class="login-popup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="text-center">
+                    <h2 class="m-b-20">click here for the Youtube popup</h2>
+                    <a class="popup-with-form btn btn-default primary-btn" (click)="openVerticallyCentered(content)">click here
+                    </a>
+                    <ng-template #content let-modal>
+                            <div class="modal-body video-modal">
+                                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                            </div>
+                          </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login-popup section end -->

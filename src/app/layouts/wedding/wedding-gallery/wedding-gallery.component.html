@@ -1,0 +1,64 @@
+<!--gallery section start-->
+<section class="wedding portfolio-section zoom-gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <img src="assets/images/wedding-img/bottom.png" alt=""
+                         class="img-fluid title-img">
+                    <div class="main-title">
+                        <h2 class="gradient-text">beautiful photo album</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
+                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 filter-section">
+                <div class="filter-container isotopeFilters">
+                    <ul class="list-inline filter">
+                            <li [ngClass]="{active : activeFilter == 'all'}"><a href="javascript:void(0)" (click)="filterImg('all')" data-filter="*">All </a></li>
+                            <li [ngClass]="{active : activeFilter == 'design'}"><a href="javascript:void(0)" (click)="filterImg('design')" data-filter=".fashion">Design</a></li>
+                            <li [ngClass]="{active : activeFilter == 'graphics'}"><a href="javascript:void(0)" (click)="filterImg('graphics')" data-filter=".bags">Graphics</a></li>
+                            <li [ngClass]="{active : activeFilter == 'branding'}"><a href="javascript:void(0)" (click)="filterImg('branding')"data-filter=".shoes">Branding</a></li>
+                            <li [ngClass]="{active : activeFilter== 'photography'}"><a href="javascript:void(0)"  (click)="filterImg('photography')" data-filter=".watch">Photography</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ngx-masonry [options]="myOptions" #masonry [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'all'">
+                <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                  *ngFor="let img of urlsGraphics">
+                  <img  class="img-fluid" [src]="img">
+                </div>
+              </ngx-masonry>
+              <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'design'">
+                  <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                    *ngFor="let img of urlsAll">
+                    <img  class="img-fluid" [src]="img">
+                  </div>
+                </ngx-masonry>
+                <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'graphics'">
+                    <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                      *ngFor="let img of urlsGraphics">
+                      <img  class="img-fluid" [src]="img">
+                    </div>
+                  </ngx-masonry>
+                  <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'branding'">
+                      <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                        *ngFor="let img of urlsDesign">
+                        <img  class="img-fluid" [src]="img">
+                      </div>
+                    </ngx-masonry>
+                    <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'photography'">
+                        <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                          *ngFor="let img of urlsDesign">
+                          <img  class="img-fluid" [src]="img">
+                        </div>
+                    </ngx-masonry>
+    </div>
+</section>
+<!-- gallery section end-->

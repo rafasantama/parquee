@@ -1,0 +1,30 @@
+<!--brand slider start-->
+<section class="app2 brand-sliders p-t-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text"><span>brand logo</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">trusted us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="brandcarouselOptions" class="brand-slider">
+                    <ng-container *ngFor="let brand of brands">
+                        <ng-template carouselSlide>
+                        <div class="item">
+                        <a href="javascript:void(0)">
+                            <img [src]="brand.img" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                        </ng-template>
+                        </ng-container>
+                        </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!--brand slider end-->

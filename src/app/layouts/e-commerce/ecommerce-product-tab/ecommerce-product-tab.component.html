@@ -1,0 +1,36 @@
+<section class="ecommerce-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title title2">
+                    <div class="sub-title">
+                        <div>
+                            <h2 class="title-text">Special Products</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 filter-section">
+                <div class="filter-container isotopeFilters">
+                    <ul class="list-inline filter">
+                        <li [ngClass]="{'active': activeCategory == 'all'}"><a data-filter="*" href="javascript:void(0)" (click)="getCategoryProduct('all')">All</a></li>
+                        <li [ngClass]="{'active': activeCategory == 'new'}"><a data-filter=".new"  href="javascript:void(0)" (click)="getCategoryProduct('new')">New</a></li>
+                        <li [ngClass]="{'active': activeCategory == 'trending'}"><a data-filter=".trending"  href="javascript:void(0)" (click)="getCategoryProduct('trending')">Trending</a></li>
+                        <li [ngClass]="{'active': activeCategory == 'western'}"><a data-filter=".branding"  href="javascript:void(0)" (click)="getCategoryProduct('western')">Western</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="isotopeContainer row">
+            <div class="col-lg-3 col-sm-6 isotopeSelector branding new " *ngFor="let product of products">
+                <div class="product-box">
+                    <a class="badge badge-light" href="javascript:void(0)" *ngIf="product.sale">On sale</a>
+                    <a class="badge badge-dark" href="javascript:void(0)" *ngIf="product.new">New</a>
+                    <app-product-box [products]="product"></app-product-box>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

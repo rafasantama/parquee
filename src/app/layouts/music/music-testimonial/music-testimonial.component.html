@@ -1,0 +1,34 @@
+<!-- testimonial section start-->
+<section class="music testimonial sponsor">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title4">
+                    <div class="main-title">
+                        <h2>testimonial</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>Our happy client</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <owl-carousel-o [options]="testimoialCarouselOptions" class="music-testimonial-slider">
+                    <ng-container *ngFor="let testimoial of testimoials">
+                        <ng-template carouselSlide class="item">
+                            <div class="">
+                                <img [src]="testimoial.img" alt="" class="img-fluid">
+                                <div class="text-center testimonial-info">
+                                    <p class="testimonial-para">{{testimoial.review}}</p>
+                                    <h6 class="gradient-text text-uppercase m-b-5 font-large">{{testimoial.name}}</h6>
+                                    <h6 class="font-small">{{testimoial.designation}}</h6>
+                                </div>
+                            </div>
+                        </ng-template>                            
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial section end-->

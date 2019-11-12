@@ -1,0 +1,101 @@
+<!-- blog section Start-->
+<section class="event speaker set-relative bg bg-grupo bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2 class="text-white">Nuestro Equipo</h2>
+                    </div>
+                    <div class="text-white sub-title">
+                        <P class="text-white">Nuestro equipo esta conformado por <span>profesionales altamente capacitados,</span> especialdiades en las diferentes <span>dimensiones de negocios</span> permitiendonos brindar una asesoría integral que <span>garantice el exito de nuestros emprendedores</span>
+                            y logrando reducir los indices de mortalidad de las startup.</P>
+                            <br/>
+                            <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div></div>
+        <div class="row">
+            <div class="col-12">
+              <owl-carousel-o [options]="blagCarouselOptions">
+                <ng-container *ngFor="let expert of experts">
+                  <ng-template carouselSlide class="item">
+                    <div class="img-container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1 speker-container text-white">
+                                    <div class="text-white text-center">
+                                        <div class="team-img">
+                                            <img [src]="expert.img" alt="" width="400" height="auto">
+                                            <div class="overlay"></div>
+                                            <div class="social">
+                                                <ul>
+                                                    <li><a href="javascript:void()"><i class="fa fa-linkedin center-content" aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="employee">
+                                            <h5 class="e-name text-center text-white">{{expert.name}}</h5>
+                                            <h6 class="post text-center text-white">{{expert.designation}}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+                  </owl-carousel-o>
+                    <!-- <div class="item d-flex">
+                        <div class="d-flex blog-container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="set-skew">
+                                        <img src="assets/images/wedding-img/blog/2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="center-text">
+                                        <div>
+                                            <h3 class="blog-text gradient-text"> The Proposal</h3>
+                                            <h6 class="blog-date">08/14/2015</h6>
+                                            <h6 class="blog-place">Newyork</h6>
+                                            <p class="blog-para">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit,…</p>
+                                            <button class="btn btn-blog">read more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item d-flex">
+                        <div class="d-flex blog-container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="set-skew">
+                                        <img src="assets/images/wedding-img/blog/3.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8 offset-sm-2 offset-md-0 col-12">
+                                    <div class="center-text">
+                                        <div>
+                                            <h3 class="blog-text gradient-text"> The Proposal</h3>
+                                            <h6 class="blog-date">08/14/2015</h6>
+                                            <h6 class="blog-place">Newyork</h6>
+                                            <p class="blog-para">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit,…</p>
+                                            <button class="btn btn-blog">read more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+</section>
+<!-- blog section end-->

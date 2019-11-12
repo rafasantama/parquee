@@ -1,0 +1,270 @@
+<section class="event speaker set-relative" id="speaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class="">team 1</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 speker-container" *ngFor="let data of experts">
+                <div class="text-center">
+                    <div class="team-img">
+                        <img [src]="data.img" alt="" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:void()"><i class="fa fa-globe center-content" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <h5 class="e-name text-center">{{data.name}}</h5>
+                        <h6 class="post text-center ">{{data.designation}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="music artist bg-artist" id="artist">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class=" text-white white-border">team 2</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="artistscarouselOptions" class=" artist-slider">
+                    <ng-container *ngFor="let artist of artists">
+                        <ng-template carouselSlide class="item">
+                        <div class="album-artist text-center">
+                            <img [src]="artist.img" alt="" class="img-fluid set-relative overlay-img">
+                            <div>
+                                <div class="overlay-box2"></div>
+                            </div>
+                            <div class="set-abs bottom-0 w-100 text-left set-z-index">
+                                <div class="singers">
+                                    <div class="m-b-10">
+                                        <h5 class="name">{{artist.name}}</h5>
+                                        <h6 class="musician">{{artist.musician}}</h6>
+                                    </div>
+                                    <div class="rate">
+                                        <div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                    <span class="sr-only">70% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set-abs cds">
+                                <img src="assets/images/music/artist/cd1.png" alt="" class="cd-animation">
+                                <img src="assets/images/music/artist/Ellipse.png" alt="" class="elipse">
+                            </div>
+                        </div>
+                   </ng-template>
+                   </ng-container>
+                   </owl-carousel-o>
+                <div class="artist-text text-center">
+                    <p class="text-white text-para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <h4 class="text-uppercase dummy-text text-white">“ dummy text of the ”</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="app2 team-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class="">team 3</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center teams">
+                <div class="our-team">
+                    <div class="set-relative">
+                        <div class="border-around overflow-hide m-auto">
+                            <div class="set-relative overflow-hide">
+                                <img src="assets/images/app_landing2/team/1.png" alt="" class="img-fluid team">
+                                <div class="overlay-team set-abs">
+                                    <img src="assets/images/app_landing2/team/hover-wave-black.png" alt="" class="img-fluid wave">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-relative set-border">
+                        <div class="set-abs top-0 borders"></div>
+                    </div>
+                    <div class="employee">
+                        <h4 class="e-name text-center">ken pitersan</h4>
+                        <h6 class="post text-center ">Seniour UI/Xi Designer</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center teams">
+                <div class="our-team">
+                    <div class="set-relative">
+                        <div class="border-around overflow-hide m-auto">
+                            <div class="set-relative overflow-hide">
+                                <img src="assets/images/app_landing2/team/2.png" alt="" class="img-fluid team">
+                                <div class="overlay-team set-abs">
+                                    <img src="assets/images/app_landing2/team/hover-wave-black.png" alt="" class="img-fluid wave">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-relative set-border">
+                        <div class="set-abs top-0 borders"></div>
+                    </div>
+                    <div class="employee">
+                        <h4 class="e-name text-center">ken pitersan</h4>
+                        <h6 class="post text-center ">Seniour UI/Xi Designer</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center teams">
+                <div class="our-team">
+                    <div class="set-relative">
+                        <div class="border-around overflow-hide m-auto">
+                            <div class="set-relative overflow-hide">
+                                <img src="assets/images/app_landing2/team/3.png" alt="" class="img-fluid team">
+                                <div class="overlay-team set-abs">
+                                    <img src="assets/images/app_landing2/team/hover-wave-black.png" alt="" class="img-fluid wave">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-relative set-border">
+                        <div class="set-abs top-0 borders"></div>
+                    </div>
+                    <div class="employee">
+                        <h4 class="e-name text-center">ken pitersan</h4>
+                        <h6 class="post text-center ">Seniour UI/Xi Designer</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center teams">
+                <div class="our-team">
+                    <div class="set-relative">
+                        <div class="border-around overflow-hide m-auto">
+                            <div class="set-relative overflow-hide">
+                                <img src="assets/images/app_landing2/team/4.png" alt="" class="img-fluid team">
+                                <div class="overlay-team set-abs">
+                                    <img src="assets/images/app_landing2/team/hover-wave-black.png" alt="" class="img-fluid wave">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-relative set-border">
+                        <div class="set-abs top-0 borders"></div>
+                    </div>
+                    <div class="employee">
+                        <h4 class="e-name text-center">ken pitersan</h4>
+                        <h6 class="post text-center ">Seniour UI/Xi Designer</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="agency format speaker expert-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class="">team 4</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="format-container">
+                    <h6 class="borders-before text-uppercase font-600">
+                        <span class="">Meet our Expert</span>
+                    </h6>
+                    <div class="format-head-text">
+                        <h2 class="">We Will Ready For <span class="block-span">Your Services</span>
+                        </h2>
+                    </div>
+                    <div class="format-sub-text">
+                        <p class="about-para">Lorem ipsum dolor sit amet, consectetur
+                            sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <a href="javascript:void()" class=" btn btn-default btn-gradient text-white">view more</a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <owl-carousel-o [options]="speakerCarouselOptions" class="speaker-slider">
+                    <ng-container *ngFor="let expert of experts">
+                        <ng-template carouselSlide class="item speker-container">
+                            <div class="text-center">
+                                <div class="team-img">
+                                    <img [src]="expert.img" alt="" class="img-fluid">
+                                    <div class="overlay"></div>
+                                    <div class="social">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-facebook center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-twitter center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-google center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-globe center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="employee">
+                                    <h5 class="e-name text-center font-secondary">{{expert.name}}</h5>
+                                    <h6 class="post text-center ">{{expert.designation}}</h6>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>

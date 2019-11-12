@@ -1,0 +1,59 @@
+
+<!-- videos section Start-->
+
+<section class="app1 videos bg-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <div class="center-content">
+                    <div class="video w-100">
+                        <a class="button center-content">
+                            <img src="assets/images/app_landing1/playl-1.png" (click)="openVerticallyCentered(content)" alt="video" class="img-fluid">
+                            <ng-template #content let-modal>
+                                <div class="modal-body video-modal">
+                                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                                </div>
+                              </ng-template>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 counters video-description">
+                <h3 class="m-b-30 text-white">Discover The New App</h3>
+                <div class="m-b-35">
+                    <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut</p>
+
+                    <p class="p-light">ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur.</p>
+
+                    <p class="p-light">cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+                <div class="link-horizontal">
+                    <ul>
+                        <li>
+                            <a class="icon-btn">
+                                <i class="fa fa-android center-content shadow" aria-hidden="true"></i>
+                                <h6 class="text-center text-white">android</h6>
+                            </a>
+                        </li>
+                        <li class="borders-right p-0"></li>
+                        <li>
+                            <a class="icon-btn">
+                                <i class="fa fa-apple center-content shadow" aria-hidden="true"></i>
+                                <h6 class="text-center text-white">ios</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- videos section end-->

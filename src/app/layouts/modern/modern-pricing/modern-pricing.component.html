@@ -1,0 +1,47 @@
+<!--price start-->
+<section class="app2 pricing p-t-0" id="plan">
+<div class="animated-bg"><i></i><i></i><i></i></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title2">
+                    <img src="assets/images/logo/2.png" alt="" class="img-fluid title-img">
+                    <h6 class="font-primary borders main-text"><span>pricing</span></h6>
+                    <div class="sub-title">
+                        <h2 class="title-text text-capitalize text-center">our plan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="pricingcarouselOptions" class="pricing-slider price-margin">
+                    <ng-container *ngFor="let price of pricing">
+                        <ng-template carouselSlide class="item">
+                        <div class="price-container shadows text-center">
+                            <div class="service-feature ">
+                                <div class="feature-text">
+                                    <span class="flaticon-{{price.icon}} feature-icon"></span>
+                                    <h3 class="text-white feature-text-heading text-center">{{price.package}}</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="price-feature-container ">
+                                    <div class="price-features">
+                                        <h5 class="price-feature text-center">{{price.feature1}}</h5>
+                                        <h5 class="price-feature text-center">{{price.feature2}}</h5>
+                                        <h5 class="price-feature text-center">{{price.feature3}}</h5>
+                                    </div>
+                                    <div class="price-value">
+                                        <h6 class="price text-center">$<span class="large">{{price.price}}</span>/month</h6>
+                                    </div>
+                                    <a href="javascript:void()" class="btn btn-default btn-white">{{price.btn}}</a>
+                                </div>
+                            </div>
+                        </div>
+                        </ng-template>
+                        </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!--price end-->

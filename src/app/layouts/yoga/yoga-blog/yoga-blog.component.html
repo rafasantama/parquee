@@ -1,0 +1,63 @@
+
+<!-- blog section start-->
+<section class="yoga blog">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <div class="title title2">
+                  <h2 class="">Gifts & Cards</h2>
+                  <img src="assets/images/yoga-img/logo/wave-blue.png" alt="" class="img-fluid">
+              </div>
+          </div>
+          <div class="col-12">
+              <owl-carousel-o [options]="blogCarouselOptions" class="trainers-slider"> 
+                  <ng-container *ngFor="let blog of blogs">
+                    <ng-template carouselSlide class="item">
+                                <div class="img-container">
+                                <img [src]="blog.img" alt="" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="blog-info set-abs bottom-0">
+                                    <div class="center-text d-flex m-b-25">
+                                        <i class="fa fa-user-o m-r-5" aria-hidden="true"></i>
+                                        <h6 class="m-r-25 font-blog">{{blog.type}}</h6>
+                                        <i class="fa fa-calendar-o m-r-5 " aria-hidden="true"></i>
+                                        <h6 class="font-blog">{{blog.date}}</h6>
+                                    </div>
+                                    <h4 class="blog-text">{{blog.title}}</h4>
+                                    <p class="borders-before"><span>{{blog.subTitle}}</span></p>
+                                    <p class="small-font">{{blog.description}}</p>
+                                    <div class="social-list">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void()">
+                                                    <div class="center-content">
+                                                        <i class="fa fa-facebook center-content" aria-hidden="true"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void()">
+                                                    <div class="center-content">
+                                                        <i class="fa fa-twitter center-content" aria-hidden="true"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void()">
+                                                    <div class="center-content">
+                                                        <i class="fa fa-google center-content" aria-hidden="true"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                  </ng-template>
+                  </ng-container>
+                  </owl-carousel-o>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- blog section end-->

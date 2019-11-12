@@ -1,0 +1,32 @@
+<!--service css start-->
+<section class="saas2 services">
+  <div class="container saas2-services">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="title">
+                  <div class="main-title">
+                      <h2>our Features</h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="sub-title-para">We believe we have created the most efficient SaaS landing page for
+                          your users.
+                          Landing page with features that will convince you to use it for your SaaS business.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-container" *ngFor="let data of services">
+              <div class="service text-center">
+                  <div class="img-block">
+                      <img [src]="data.img" alt="" class="service-img img-fluid">
+                  </div>
+                  <div class="service-feature">
+                      <h4 class="feature-text text-center">{{data.title}}</h4>
+                      <p>{{data.description}}</p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--service css end-->

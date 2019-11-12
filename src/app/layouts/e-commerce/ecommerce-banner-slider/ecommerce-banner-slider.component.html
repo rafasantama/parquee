@@ -1,0 +1,35 @@
+<section class="ecommerce pt-0 ecommerce-home">
+    <owl-carousel-o [options]="ecombannerOptions" class="ecommerce-home-slider">
+      <ng-container *ngFor="let data of banner">
+          <ng-template carouselSlide>
+      <div class="item-class" [ngStyle]="{'background-image': 'url('+ data.img +')'}">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-5 col-lg-6 col-sm-8">
+                      <div class="contain">
+                          <div>
+                              <h1>{{data.title}}</h1>
+                              <p>{{data.description}}</p>
+                              <a  [routerLink]="data.link" class="btn btn-default primary-btn  radius-0" href="javascript:void()">{{data.btn}}</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </ng-template>
+      </ng-container>
+      </owl-carousel-o>
+</section>
+
+<section class="ecommerce collection">
+  <div class="container">
+      <div class="row banner-three">
+          <div class="col-md-4" *ngFor="let data of offers">
+              <div class="main-wrapper">
+                  <img alt="#" class="bg-img img-fluid" [src]="data.img">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

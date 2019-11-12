@@ -1,0 +1,134 @@
+<!-- header Start-->
+<!-- <section class="agency header" id="home">
+    <div class="header3 bg">
+        <div class="event-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-md-10 offset-md-1">
+                        <div class="center-text">
+                            <div class="text-center w-100">
+                                <div class="header-text" >
+                                    <h1 style="color:antiquewhite;">Bienvenido al parque del Emprendimiento</h1>
+                                </div>
+                                <div class="text-center link-horizontal">
+                                    <ul>
+                                        <li>
+                                            <a class=" btn btn-default back-white text-uppercase border-not" href="javascript:void()">Inscribirse</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="set-bottom set-abs">
+            <a class="center-content down" [scrollTo]="'#register'"  [scrollDuration]="1000">
+                <img src="assets/images/event/image-down.png"alt="" class="scroll-down">
+            </a>
+        </div>
+    </div>
+</section> -->
+<!-- video-sec -->
+<section class="event bg bg-img bg-reel video-sec breadcrumb-section breadcrumb-slider p-0">
+  <video  id="bg-vid" width="100%" muted="true" class="cover bg bg-vid" poster="lib/img/bg-vid.poster.png" autoplay loop>
+            <source src="assets/video/parque.mp4" type='video/mp4;'>
+            <source src="assets/video/parque.mp4" type='video/webm;'>
+            <source src="assets/video/parque.mp4" type='video/ogg;'>
+        </video>
+    <div class="container set-over">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-md-10 offset-md-1">
+                <div class="center-text">
+                    <div class="text-center w-100">
+                        <div class="header-text" >
+                            <!-- <div class="title">
+                                <h1><br/>Bienvenido al parque del Emprendimiento<br/></h1>
+                            </div>
+                            <div class="sub-title">
+                                    <h3><span>Uno de las mejoras incubadoras a nivel mundial</span><br/></h3>
+                            </div> -->
+                            <!-- <div>
+                                <P><br/><br/></P>
+                                <a class="btn btn-default primary-btn" >Ver Video</a>
+                            </div> -->
+                            <div class="center-content">
+                                <div class="link-horizontal">
+                                    <ul>
+                                        <li>
+                                            <a class="button btn btn-default primary-btn center-content" (click)="openVerticallyCentered(content)" >Ver Video
+                                                <ng-template #content let-modal>
+                                                        <div class="modal-body video-modal">
+                                                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                                <span aria-hidden="true">&times;</span>
+                                                              </button>
+                                                            <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/K-Um16gFt3M?autoplay=1"></iframe>
+                                                        </div>
+                                                </ng-template>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="event bg bg-header bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h1 style='font-size: 40px;'><br/>¡Incrementa tus probabilidades de éxito!<br/></h1>
+                    </div>
+                    <!-- <div class="sub-title">
+                        <h2><span>Incrementamos tus probabilidades de exito.</span><br/></h2>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="login-popup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="text-center">
+                    <h2 class="m-b-20">click here for the Youtube popup</h2>
+                    <a class="popup-with-form btn btn-default primary-btn" (click)="openVerticallyCentered(content)">click here
+                    </a>
+                    <ng-template #content let-modal>
+                            <div class="modal-body video-modal">
+                                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                            </div>
+                          </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<script>
+        var elem = document.getElementById("bg-vid");
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+        }
+</script>
+
+<!-- header end-->

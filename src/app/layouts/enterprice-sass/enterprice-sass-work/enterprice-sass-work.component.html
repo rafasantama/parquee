@@ -1,0 +1,44 @@
+<!-- work section -->
+<section id="how-work" class="saas1 howitwork">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="title">
+                    <img src="assets/images/saas1/title-logo.png" alt="title-logo" class="img-fluid">
+                    <div class="main-title">
+                        <h2>
+                            <span class="theme-color">H</span>ow <span class="theme-color">I</span>t <span
+                                class="theme-color">W</span>ork
+                        </h2>
+                    </div>
+                    <hr>
+                    <div class="sub-title">
+                        <p class="p-padding">Guide to setup and configuration. You can present below a guide and a
+                            description of how your system configuration works and add some animated screens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 work-tab">
+                <ul class="nav nav-pills justify-content-center " id="pills-tab" role="tablist">
+                    <li class="nav-item  text-center" *ngFor="let data of nav">
+                        <a class="nav-link" id="pills-work1-tab" [ngClass]="{'active show': work == data.title }"
+                                     (click)="openWorkSlide(data.title)">
+                            <img [src]="data.img" alt="tab-image-1">
+                            <h6>{{data.title}}</h6>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="work-tab-bg work-content p-t-50">
+        <div class="tab-content text-center" id="pills-tabContent">
+            <div class="tab-pane fade show active" *ngFor="let data of content" [ngClass]="{'active show': work == data.title }" id="pills-work1" role="tabpanel">
+                <img [src]="data.img" alt="tab-image-1" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- end work section -->

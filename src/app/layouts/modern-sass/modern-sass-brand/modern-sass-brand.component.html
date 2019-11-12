@@ -1,0 +1,34 @@
+<!--brand css start-->
+<section class="saas2 brand">
+    <div class="col-md-10 offset-md-1 col-12">
+        <div class="container saas2-services">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="title">
+                        <div class="main-title">
+                            <h2>trusted us</h2>
+                        </div>
+                        <div class="sub-title">
+                            <p class="sub-title-para">We believe we have created the most efficient SaaS landing page
+                                for
+                                your users.
+                                Landing page with features that will convince you to use it for your SaaS business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <owl-carousel-o [options]="brandcarouselOptions" class="brand-slider">
+                        <ng-container *ngFor="let brand of brands">
+                            <ng-template carouselSlide class="item">
+                                <a href="javascript:void(0)">
+                                    <img [src]="brand.img" alt="" class="img-fluid">
+                                </a>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--brand css end-->

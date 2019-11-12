@@ -1,0 +1,26 @@
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section bg-dark breadcrumb-slider p-0">
+    <owl-carousel-o [options]="galleryCarouselOptions" class="img-slider">
+        <ng-container *ngFor="let images of gallery">
+            <ng-template carouselSlide class="item">
+                <div class="item">
+                    <div [class]="images.img"></div>
+                </div>
+                </ng-template>
+                </ng-container>
+                </owl-carousel-o>
+                <div class="container set-over">
+      <div class="row">
+          <div class="col-12"><h2 class="breadcrumb-text text-center">features with gallery background</h2>
+              <ul class="breadcrumb justify-content-center">
+                 
+                  <li><a href="javascript:void()">breadcrumb style</a></li>
+                  <li>gallery background</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+<!--breadcrumb section end-->
+
+<app-breadcrumb-layout-content></app-breadcrumb-layout-content>

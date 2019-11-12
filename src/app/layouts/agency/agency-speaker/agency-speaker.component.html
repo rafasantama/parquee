@@ -1,0 +1,66 @@
+<!-- speaker section start-->
+<section class="agency format speaker expert-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="format-container">
+                    <h6 class="borders-before text-uppercase font-600">
+                        <span class="">Meet our Expert</span>
+                    </h6>
+                    <div class="format-head-text">
+                        <h2 class="">We Will Ready For <span class="block-span">Your Services</span>
+                        </h2>
+                    </div>
+                    <div class="format-sub-text">
+                        <p class="about-para">Lorem ipsum dolor sit amet, consectetur
+                            sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <a href="javascript:void()" class=" btn btn-default btn-gradient text-white">view more</a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <owl-carousel-o [options]="speakerCarouselOptions" class="speaker-slider">
+                    <ng-container *ngFor="let expert of experts">
+                        <ng-template carouselSlide class="item speker-container">
+                            <div class="text-center">
+                                <div class="team-img">
+                                    <img [src]="expert.img" alt="" class="img-fluid">
+                                    <div class="overlay"></div>
+                                    <div class="social">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-facebook center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-twitter center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-google center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i class="fa fa-globe center-content" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="employee">
+                                    <h5 class="e-name text-center font-secondary">{{expert.name}}</h5>
+                                    <h6 class="post text-center ">{{expert.designation}}</h6>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- speaker section end-->

@@ -1,0 +1,93 @@
+<div class="agency">
+<app-ecommerce-header></app-ecommerce-header>
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section-main inner-2 breadcrumb-section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain ">
+                        <div>
+                            <h2 class="breadcrumb-txt">Compare</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                
+                                <li><a href="javascript:void()">Compare Product</a></li>
+                                <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i>Compare</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--breadcrumb section end -->
+    
+
+<section class="compare-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="compare-page">
+                   <div class="col-sm-12 empty-cart-cls text-center" *ngIf="!products.length">
+                      <img src="assets/images/empty-compare.png" class="img-fluid mb-4" >
+                        <h3><strong>Compare List is Empty</strong></h3>
+                        <h4>Explore more shortlist some items.</h4>
+                  </div>
+                  <div class="table-wrapper table-responsive" *ngIf="products.length">
+                      <table class="table">
+                          
+                          <thead>
+                          <tr class="th-compare">
+                              <td>Action</td>
+                              <th class="item-row" *ngFor="let product of products">
+                                <button type="button" (click)="removeItem(product)" class="remove-compare"> Remove </button>
+                              </th>
+                          </tr>
+                          </thead>
+                          <tbody id="table-compare">
+                          <!-- Product Name -->
+                          <tr>
+                              <th class="product-name">Product Name</th>
+                              <td class="grid-link__title" *ngFor="let product of products">{{product.name}}</td>
+                          </tr>
+                          <!-- Product Image -->
+                          <tr>
+                              <th class="product-name ">Product Image</th>
+                              <td class="item-row" *ngFor="let product of products">
+                                  <img [src]="product.img" width="185" class="featured-image">
+                                  <div class="product-price product_price"> 
+                                  <strong>On Sale: </strong><span>{{product.price | currency:productsService?.currency:'symbol'}}</span></div>
+                                  <form class="variants clearfix">
+                                    <button title="Add to Cart" (click)="addToCart(product)" class="add-to-cart btn btn-default primary-btn radius-0">Add to Cart</button>
+                                  </form>
+                              </td>
+                          </tr>
+                          <!-- Product Description -->
+                          <tr>
+                              <th class="product-name">Product Description</th>
+                              <td class="item-row" *ngFor="let product of products">
+                                  <p class="description-compare">{{product.discription | slice:0:200}}</p>
+                              </td>
+                          </tr>
+                          <!-- Product Availability -->
+                          <tr>
+                              <th class="product-name"> Availability </th>
+                              <td class="available-stock" *ngFor="let product of products">
+                                  <p> Available In stock </p>
+                              </td>
+                          </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <div class="product-buttons compare-btn" *ngIf="!productsService?.catalogMode">
+                    <a [routerLink]="'/e-commerce'" class="btn btn-default primary-btn radius-0 float-right">Compare More Product</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Section ends -->
+<app-ecommerce-footer></app-ecommerce-footer>
+</div>

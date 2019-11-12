@@ -1,0 +1,74 @@
+<!-- section start -->
+<section class="agency blog blog-sec blog-sidebar blog-split sider bg bg-color bg-somos">
+    <div class="container">
+        <div class="row pl-0 pr-0">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-12 blog-sec blog-list" *ngFor="let blog of blogData">
+                        <div class="blog-agency">
+                            <div class="row blog-contain pl-0 pr-0">
+                                <div class="col-xl-4 col-lg-5 col-md-6 p-0" [ngClass]="blog.Id%2==0?'order-md-2':''">
+                                    <div class=" text-center">
+                                        <img [src]="blog.img" alt="" class="img-fluid blog-img">
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-md-6 p-0">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info">
+                                                <div class="m-b-20">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-industry m-r-10" aria-hidden="true"></i>
+                                                        <h6 class="font-blog">{{blog.type}}</h6>
+                                                    </div>
+                                                </div>
+                                                <h5 class="blog-head font-600">{{blog.title}}</h5>
+                                                <p class="para2">{{blog.content}}</p>
+                                                <br/>
+                                                <div class="m-t-20">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-address-book m-r-10" aria-hidden="true"></i>
+                                                        <h6 class="m-r-25 font-blog">{{blog.nombre}}</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="m-t-20">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-briefcase m-r-10" aria-hidden="true"></i>
+                                                        <h6 class="font-blog">{{blog.cargo}}</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="m-t-20">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-phone m-r-10" aria-hidden="true"></i>
+                                                        <h6 class="m-r-25 font-blog"><a class="m-r-25 font-blog" target="_blank" [href]="blog.urltel">{{blog.tel}}</a></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="m-t-20">
+                                                    <div class="center-text">
+                                                        <i class="fa fa-envelope m-r-10" aria-hidden="true"></i>
+                                                        <a class="m-r-25 font-blog" target="_blank" [href]="blog.urlcorreo">{{blog.correo}}</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-bottom m-t-20 col-md-6">
+                                                    <a href="javascript:void()" class="text-uppercase">{{blog.btn}}</a>
+                                                </div>
+                                                <div class="btn-bottom m-t-20 col-md-6">
+                                                    <i class="fa fa-download m-r-10" aria-hidden="true"></i>
+                                                    <a [href]="blog.fichas" target="_blank" class="text-uppercase">Ficha</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <app-sidebar></app-sidebar>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section end -->

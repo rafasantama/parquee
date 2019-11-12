@@ -1,0 +1,53 @@
+<!--pricing css start-->
+<section class="saas2 pricing m-0" id="plan">
+    <div class="col-md-10 offset-md-1 col-12">
+        <div class="container saas2-services">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="title">
+                        <div class="main-title">
+                            <h2>pricing plan</h2>
+                        </div>
+                        <div class="sub-title">
+                            <p class="sub-title-para">We believe we have created the most efficient SaaS landing page
+                                for
+                                your users.
+                                Landing page with features that will convince you to use it for your SaaS business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-8 offset-md-2 offset-lg-0">
+                    <owl-carousel-o [options]="pricingcarouselOptions" class="pricing-slider price-margin">
+                        <ng-container *ngFor="let price of pricing">
+                            <ng-template carouselSlide class="item">
+                            <div class="price-container shadows text-center">
+                                <div class="service-feature ">
+                                    <div class="feature-text">
+                                        <img [src]="price.img" alt="" class="image-top">
+                                        <h3 class="text-white feature-text-heading text-center">{{price.package}}</h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="price-feature-container ">
+                                        <div class="price-features">
+                                            <h6 class="price text-center-feature">{{price.feature1}}</h6>
+                                            <h6 class="price text-center-feature">{{price.feature2}}</h6>
+                                            <h6 class="price text-center-feature">{{price.feature3}}</h6>
+                                            <h6 class="price text-center-feature">{{price.feature4}}</h6>
+                                        </div>
+                                        <div class="price-value">
+                                            <h6 class="price text-center">$<span class="large">{{price.price}}</span>/month</h6>
+                                        </div>
+                                        <a href="javascript:void()" class="btn btn-default btn-gradient">{{price.btn}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </ng-template>
+                    </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--pricing css end-->

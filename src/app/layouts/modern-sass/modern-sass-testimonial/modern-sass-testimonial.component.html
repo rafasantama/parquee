@@ -1,0 +1,75 @@
+<!--testimonial css start-->
+<section class="saas2 testimonial bg-gradient">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title">
+                    <div class="main-title">
+                        <h2 class="text-white">Testimonial</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p class="sub-title-para text-white">We believe we have created the most efficient SaaS landing
+                            page for your users. Landing page with features that will convince you to use it for your
+                            SaaS business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-1">
+                <owl-carousel-o [options]="testimonialcarouselOptions" class="testimonial">
+                        <ng-container *ngFor="let data of testimonial">
+                            <ng-template carouselSlide class="item">
+                            <div class="col-lg-10 offset-lg-1 col-12  p-t-30">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="testimonial-msg set-relative">
+                                            <img [src]="data.img" alt="" class="img-fluid">
+                                            <div class="msg-box">
+                                                <div class="center-content">
+                                                    <img [src]="data.msgIcon"
+                                                        alt=""
+                                                        class="img-fluid set-abs">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="quote-margin">
+                                            <div class="quotes set-relative m-b-30">
+                                                <img src="assets/images/event/testimonial/i1.png" alt=""
+                                                    class="img-fluid set-abs left-quote">
+                                                <div class="quote-text">
+                                                    <h6 class="text-white">When you innovate, you make mistakes.It is best
+                                                        to admit them quickly, & get on with improving your other
+                                                        innovations.</h6>
+                                                </div>
+                                                <img src="assets/images/event/testimonial/i2.png" alt=""
+                                                    class="img-fluid set-abs right-quote">
+                                            </div>
+                                            <div class="rating align-items-center">
+                                                <div class="stars">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h5 class="name">{{data.name}} <span> {{data.designation}}</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                            </ng-template>
+                        </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonial css end-->

@@ -1,0 +1,21 @@
+<section class="portfolio p-0 center-slide">
+  <div class="container-fluid p-0">
+      <div class="row">
+          <div class="col-12">
+              <owl-carousel-o [options]="centerdslideOption" class="gallery-slider">
+                  <ng-container *ngFor="let slide of centerdSlide">
+                      <ng-template carouselSlide>
+                            <div class="imgs-carousel {{slide.img}}"></div>
+                            <div class="abs-center w-100 text-container">
+                                <h5 class="text-white overlay-text text-center">{{slide.title}}<span
+                                        class="m-l-5">{{slide.year}}</span>
+                                </h5>
+                                <p class="right-side text-center">{{slide.description}}</p>
+                            </div>
+                      </ng-template>
+                  </ng-container>
+              </owl-carousel-o>
+          </div>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <div class="title title2">
+          <div class="sub-title">
+            <div>
+              <h2 class="title-text">Recent Story</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="agency blog blog-sec">
+            <owl-carousel-o [options]="blogCarouselOptions" class="blog-slider">
+              <ng-container *ngFor="let data of blog">
+                <ng-template carouselSlide>
+                  <div class="blog-agency">
+                    <div class="blog-contain">
+                      <img alt="" class="img-fluid" [src]="data.img">
+                      <div class="img-container center-content">
+                        <div class="center-content">
+                          <div class="blog-info">
+                            <div class="m-b-20">
+                              <div class="center-text">
+                                <i aria-hidden="true" class="fa fa-clock-o m-r-10"></i>
+                                <h6 class="m-r-25 font-blog">{{data.date}}</h6>
+                                <i aria-hidden="true" class="fa fa-map-marker m-r-10"></i>
+                                <h6 class="font-blog">{{data.title}}</h6>
+                              </div>
+                            </div>
+                            <h5 class="blog-head font-600">{{data.subTitle}}</h5>
+                            <p class="para2">
+                              {{data.description}}
+                            </p>
+                            <div class="btn-bottom m-t-20">
+                              <a class="text-uppercase" href="javascript:void()">read more</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

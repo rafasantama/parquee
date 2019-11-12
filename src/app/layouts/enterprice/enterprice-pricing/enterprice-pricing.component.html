@@ -1,0 +1,52 @@
+<!-- pricing section Start-->
+
+<section class="app1 pricing mb-0" id="plan">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                <div class="title title1">
+                    <div class="main-title">
+                        <h2 class="font-primary">price Plan</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <owl-carousel-o [options]="owlcarouselOptions" class="pricing-slider price-margin">
+                    <ng-container *ngFor="let slide of owlcarousel1">
+                        <ng-template carouselSlide class="item">
+                        <div class="price-container shadows text-center">
+                            <div class="price-feature-container set-relative">
+                                <div class="feature-text">
+                                    <h3 class="feature-text-heading font-primary">{{slide.heading}}</h3>
+                                    <hr/>
+                                </div>
+                                <div class="price-value">
+                                    <h4 class="price">{{slide.price}}</h4>
+                                </div>
+                                <div class="price-features">
+                                    <h5 class="price-feature">{{slide.features1}}</h5>
+                                    <h5 class="price-feature">{{slide.features2}}</h5>
+                                    <h5 class="price-feature">{{slide.features3}}</h5></div>
+                                <a href="javascript:voi(0)" class=" btn btn-default btn-gradient text-white">{{slide.btn}}</a>
+                                <div class="set-abs bottom-0">
+                                    <img [src]="slide.img" alt=""
+                                         class="img-fluid pricing-img">
+                                </div>
+                            </div>
+                        </div>
+                      </ng-template>
+                      </ng-container>
+                    </owl-carousel-o> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- pricing section end-->
+

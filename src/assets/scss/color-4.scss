@@ -1,0 +1,8 @@
+@import 'theme/variable' ;
+$primary: #223b7b;
+$secondary: $white;
+$dark: #213672;
+$light:#2245a0;
+@import 'theme/style';
+@import 'theme/responsive';
+@import 'theme/customize';

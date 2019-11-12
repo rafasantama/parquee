@@ -1,0 +1,61 @@
+<!-- artist section Start-->
+<section class="music artist bg-artist bg-shadow-top-bottom" id="artist">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title4">
+                    <div class="main-title">
+                        <h2>artists</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>Our artists 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="artistscarouselOptions" class=" artist-slider">
+                    <ng-container *ngFor="let artist of artists">
+                        <ng-template carouselSlide class="item">
+                        <div class="album-artist text-center">
+                            <img [src]="artist.img" alt="" class="img-fluid set-relative overlay-img">
+                            <div>
+                                <div class="overlay-box2"></div>
+                            </div>
+                            <div class="set-abs bottom-0 w-100 text-left set-z-index">
+                                <div class="singers">
+                                    <div class="m-b-10">
+                                        <h5 class="name">{{artist.name}}</h5>
+                                        <h6 class="musician">{{artist.musician}}</h6>
+                                    </div>
+                                    <div class="rate">
+                                        <div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                    <span class="sr-only">70% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set-abs cds">
+                                <img src="assets/images/music/artist/cd1.png" alt="" class="cd-animation">
+                                <img src="assets/images/music/artist/Ellipse.png" alt="" class="elipse">
+                            </div>
+                        </div>
+                   </ng-template>
+                   </ng-container>
+                   </owl-carousel-o>
+                <div class="artist-text text-center">
+                    <p class="text-white text-para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                        type specimen book.
+                    </p>
+                    <h4 class="text-uppercase dummy-text">“ dummy text of the ”</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- artist section end-->

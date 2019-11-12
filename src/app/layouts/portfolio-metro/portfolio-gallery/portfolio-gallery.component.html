@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-12">
+        <div class="filter-container isotopeFilters">
+            <ul class="list-inline filter">
+                <li [ngClass]="{'active': customizer == 'all' }"><a (click)="openGallery('all')">All </a></li>
+                <li [ngClass]="{'active': customizer == 'fashion' }"><a (click)="openGallery('fashion')">Fashion</a>
+                </li>
+                <li [ngClass]="{'active': customizer == 'bags' }"><a (click)="openGallery('bags')">Bags</a></li>
+                <li [ngClass]="{'active': customizer == 'shoes' }"><a (click)="openGallery('shoes')">Shoes</a></li>
+                <li [ngClass]="{'active': customizer == 'watch' }"><a (click)="openGallery('watch')">Watch</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="isotopeContainer row">
+    <ng-container *ngIf="customizer=='all'">
+        <figure class="my-app-custom-image-with-desc p-width" *ngFor="let img of allImages">
+            <div class="isotopeSelector shoes fashion ">
+                <div class="overlay">
+                    <div class="border-portfolio">
+                        <div class="overlay-background">
+                            <i class="fa fa-plus" aria-hidden="true" (click)="openImageModalRowDescription(img)"></i>
+                        </div>
+                        <img [src]="img.modal.img" />
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-text" *ngIf="displayblock.displyBlock">
+                    <h3 class="head-text">
+                        Lorem Ipsum
+                    </h3>
+                    <h6 class="head-sub-text">
+                        Lorem Ipsum
+                    </h6>
+                </div>
+        </figure>
+    </ng-container>
+    <ng-container *ngIf="customizer=='fashion'">
+        <app-fashion class="w-100"></app-fashion>
+    </ng-container>
+    <ng-container *ngIf="customizer=='bags'">
+        <app-bags class="w-100"></app-bags>
+    </ng-container>
+    <ng-container *ngIf="customizer=='shoes'">
+        <app-shoes class="w-100"></app-shoes>
+    </ng-container>
+    <ng-container *ngIf="customizer=='watch'">
+        <app-watch class="w-100"></app-watch>
+    </ng-container>
+    <ks-modal-gallery [id]="1" [modalImages]="allImages" [plainGalleryConfig]="customPlainGalleryRowDescConfig"
+        [buttonsConfig]="buttonsConfigCustom">
+    </ks-modal-gallery>
+</div>
+<!-- pagination Start -->
+<div class="pagination_sec">
+    <div class="content_detail__pagination cdp">
+        <ul>
+            <li><a href="javascript:void(0)" class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="javascript:void(0)" class="active cdp_i">1</a></li>
+            <li><a href="javascript:void(0)" class="cdp_i">2</a></li>
+            <li><a href="javascript:void(0)" class="cdp_i">3</a></li>
+            <li><a href="javascript:void(0)" class="next"><i class="fa fa-angle-double-right"
+                        aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- pagination End -->

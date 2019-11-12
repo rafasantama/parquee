@@ -1,0 +1,39 @@
+<!--feature css start-->
+<section class="saas2 feature booking" id="feaure">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="title">
+                  <div class="main-title">
+                      <h2>Advance Features</h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="sub-title-para">We believe we have created the most efficient SaaS landing page for
+                          your users.
+                          Landing page with features that will convince you to use it for your SaaS business.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-8 col-md-7">
+              <div class="center-text justify-content-center">
+                  <div class="image-container">
+                      <img src="assets/images/saas2/advance-feature/01.png" alt=""
+                           class="img-fluid advance-feature-img">
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-5">
+              <div *ngFor="let data of features">
+                  <div class="center-content justify-content-start">
+                      <img [src]="data.img" alt="" class="img-fluid">
+                      <div class="feature-content">
+                          <h5 class="feature-head">{{data.title}}</h5>
+                          <p class="feature-para">{{data.description}}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--feature css end-->

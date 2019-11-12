@@ -1,0 +1,46 @@
+<!--schedule section start-->
+<section class="event bg bg-color bg-grupo schedule" id="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                            <h2 class="text-white">Proceso de Selección</h2>
+                    </div>
+                    <!-- <div class="sub-title">
+                        <P class="text-white">Llevamos <span>mas de 15 años</span> impactando la sociedad mediante 
+                        <span>acompañamiento de alta calidad</span> al servicio de <span>los emprendedores de la ciudad</span>
+                        , logrando obtener cifras contundentes sobre nuestra labor.</P>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="event-container scrollbar">
+                    <div>
+                        <div class="cal-time events" *ngFor="let data of schedule">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="schedule-event">
+                                        <h5 class="names">{{data.name}}</h5>
+                                        <img [src]="data.icon" alt="" width="200" class="img-fluid schedule-img">
+                                        <p class="schedule-description">{{data.description}}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="timing">
+                                        <h5 class="event-time">{{data.totime}}</h5>
+                                        <div class="border-container">
+                                            <div class="border-dashed"></div>
+                                        </div>
+                                        <h5 class="event-time">{{data.endtime}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--schedule section end-->

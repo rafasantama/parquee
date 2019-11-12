@@ -1,0 +1,15 @@
+<div class="theme-card">
+    <h5 class="title-border">new product</h5>
+    <div class="offer-slider slide-1">
+        <div>
+            <div class="media" *ngFor="let product of products | slice:0:3 ">
+                <a [routerLink]="['/e-commerce/left-sidebar/product', product.id]"><img class="img-fluid" [src]="product.img" alt=""></a>
+                <div class="media-body align-self-center">
+                  <a [routerLink]="['/e-commerce/left-sidebar/product', product.id]"><h6>{{product.name}}</h6></a>
+                  <h4 *ngIf="!productsService?.catalogMode">{{product.price | currency:productsService?.currency:'symbol'}}</h4>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- side-bar single product slider end -->

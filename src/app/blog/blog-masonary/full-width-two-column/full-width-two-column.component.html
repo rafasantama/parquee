@@ -1,0 +1,31 @@
+
+        <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout">
+          <div ngxMasonryItem class="m-width m-2-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+            *ngFor="let blog of blogData">
+            <div class="blog-agency">
+              <div class="blog-contain">
+                <img [src]="blog.img" alt="" class="img-fluid">
+                <div class="img-container">
+                  <div class="blog-info bottom-0">
+                    <div class="d-flex m-b-20">
+                      <div class="d-flex center-text">
+                        <i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>
+                        <h6 class="m-r-25 font-blog">{{blog.date}}</h6>
+                      </div>
+                      <div class="d-flex center-text">
+                        <i class="fa fa-map-marker m-r-10" aria-hidden="true"></i>
+                        <h6 class="font-blog">{{blog.type}}</h6>
+                      </div>
+                    </div>
+                    <h5 class="blog-head font-600">{{blog.title}}</h5>
+                    <p class="para2">{{blog.content}}
+                    </p>
+                    <div class="btn-bottom  m-t-20">
+                      <a href="javascript:void()" class="text-uppercase">{{blog.btn}}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-masonry>

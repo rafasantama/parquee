@@ -1,0 +1,143 @@
+<app-ecommerce-header></app-ecommerce-header>
+
+<!-- breadcrumb start -->
+<section class="breadcrumb-section-main inner-2 breadcrumb-section-sm" *ngIf="!orderDetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-contain ">
+                    <div>
+                        <h2 class="breadcrumb-txt">E-commerce</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            
+                            <li><a href="javascript:void()">E-commerce</a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i>404</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb End -->
+<!-- section start -->
+<div class="section-404" *ngIf="!orderDetails">
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="central-body">
+                        <h1 class="text-inner text-black">404</h1>
+                        <h3 class="sub-text">page not found</h3>
+                        <p class="text-404 text-center">The Page You Are Attempting To Reach Is Currently Not
+                            Available. This May Be Because The Page Does Not Exist Or Has Been Moved.</p>
+                        <a class="btn btn-default primary-btn back-white m-t-20" href="javascript:void()">back to home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section ends -->
+
+<!-- thank-you section start -->
+<section class="section-b-space light-layout" *ngIf="orderDetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="success-text">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <h2>thank you</h2>
+                    <p>Payment is has been received Order Placed Successfully</p>
+                    <p>Transaction ID:{{orderDetails.orderId}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section ends -->
+
+<!-- order-detail section start -->
+<section class="section-b-space" *ngIf="orderDetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="product-order">
+                    <h3>your order details</h3>
+                    <div class="row product-order-detail" *ngFor="let item of orderDetails.product">
+                        <div class="col-3">
+                            <img [src]="item.product.img" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-3 order_detail">
+                            <div>
+                                <h4>product name</h4>
+                                <h5>{{item.product.name}}</h5>
+                            </div>
+                        </div>
+                        <div class="col-3 order_detail">
+                            <div>
+                                <h4>quantity</h4>
+                                <h5>{{item.quantity}}</h5>
+                            </div>
+                        </div>
+                        <div class="col-3 order_detail">
+                            <div>
+                                <h4>price</h4>
+                                <h5>{{item.product.price | currency:productsService?.currency:'symbol'}}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total-sec">
+                        <ul>
+                            <li>Subtotal <span>{{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</span></li>
+                            <li>Shipping <span>$00.00</span></li>
+                            <li>Tax <span>$00.00</span></li>
+                        </ul>
+                    </div>
+                    <div class="final-total">
+                        <h3>total <span>{{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row order-success-sec">
+                    <div class="col-sm-6">
+                        <h4>summery</h4>
+                        <ul class="order-detail">
+                            <li>order ID: {{orderDetails.orderId}}</li>
+                            <li>Order Date: October 22, 2018</li>
+                            <li>Order Total: {{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>shipping address</h4>
+                        <ul class="order-detail">
+                            <li>{{orderDetails.shippingDetails.address}}</li>
+                            <li>{{orderDetails.shippingDetails.state}}</li>
+                            <li>{{orderDetails.shippingDetails.country}}, {{orderDetails.shippingDetails.postalcode}}</li>
+                            <li>Contact No. {{orderDetails.shippingDetails.phone}}</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12 payment-mode">
+                        <h4>payment method</h4>
+                        <p class="mt-1">Pay on Delivery (Cash/Card). Cash on delivery (COD) available. Card/Net banking acceptance subject to device availability.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="delivery-sec">
+                            <h3>expected date of delivery</h3>
+                            <h2>March 21, 2019</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Section ends -->
+<app-ecommerce-footer></app-ecommerce-footer>

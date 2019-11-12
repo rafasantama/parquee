@@ -1,0 +1,50 @@
+<!-- when-where section start-->
+<section class="wedding pricing when-where-bg bg set-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <img src="assets/images/wedding-img/bottom.png" alt=""
+                         class="img-fluid title-img">
+                    <div class="main-title">
+                        <h2 class="gradient-text">When And Where</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
+                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <owl-carousel-o [options]="placeCarouselOptions" class="when-slider">
+                <ng-container *ngFor="let place of places">
+                      <ng-template carouselSlide class="item">
+                          <div class="price-container bg-white price-margin shadows text-center">
+                              <div class="price-feature-container set-relative">
+                                  <div class="feature-text">
+                                      <img [src]="place.img" alt=""
+                                           class="img-fluid feature-icon">
+  
+                                      <hr class="set-border">
+                                      <h3 class="feature-text-heading text-center bold gradient-text ">{{place.function}}</h3>
+                                      <div class="price-value">
+                                          <h6 class="price text-center font-primary">{{place.time}}</h6>
+                                      </div>
+                                  </div>
+                                  <div class="price-features font-primary">
+                                      <h4 class="price-feature font-primary">{{place.des1}}</h4>
+                                      <h4 class="price-feature font-primary">{{place.des2}} </h4>
+                                      <h4 class="price-feature font-primary m-0">{{place.des3}}</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- when-where section end-->

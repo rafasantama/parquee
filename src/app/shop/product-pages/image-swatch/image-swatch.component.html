@@ -1,0 +1,332 @@
+<app-ecommerce-header></app-ecommerce-header>
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section-main inner-2 breadcrumb-section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain ">
+                        <div>
+                            <h2 class="breadcrumb-txt">Product Pages</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                
+                                <li><a href="javascript:void()">Product Pages</a></li>
+                                <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i>Image Swatch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--breadcrumb section end -->
+<!-- section start -->
+<div class="agency">
+    <section>
+        <div class="collection-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xs-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="filter-main-btn mb-2">
+                                        <span class="filter-btn"><i aria-hidden="true"
+                                                                    class="fa fa-filter"></i> filter</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                        <owl-carousel-o [options]="productSliderOptions" #owlCar  class="product-slick">
+                                                <ng-container *ngFor="let data of product.variants; index as i">
+                                                  <ng-template carouselSlide [id]="i">
+                                                        <img alt="" class="img-fluid" [src]="data.images">
+                                                </ng-template>
+                                                </ng-container>
+                                        </owl-carousel-o>
+                                       
+                                                <div class="col-12 p-0">
+                                                    <div class="slider-nav">
+                                                            <owl-carousel-o [options]="productSliderOptions1" class="product-slick">
+                                                                    <ng-container *ngFor="let data of product.variants; index as i">
+                                                                      <ng-template carouselSlide [id]="i">
+                                                                            <img alt="" class="img-fluid"
+                                                                            [src]="data.images" (click)="owlCar.to(i.toString())">
+                                                                    </ng-template>
+                                                                    </ng-container>
+                                                            </owl-carousel-o>
+                                                    </div>
+                                                </div>
+                                </div>
+                                <div class="col-lg-6 rtl-text">
+                                    <div class="product-right">
+                                        <h2>{{product.name}}</h2>
+                                        <h4>
+                                            <del>{{product.discountPrice | currency:productsService?.currency:'symbol'}}</del>
+                                            <span>{{product.price | currency:productsService?.currency:'symbol'}}</span>
+                                        </h4>
+                                        <h3>{{product.price | currency:productsService?.currency:'symbol'}}</h3>
+                                        <ul class="image-swatch d-flex" *ngIf="product.variants && !productsService?.catalogMode">
+                                                <li [id]="i" *ngFor="let variant of product.variants let i = index">
+                                                    <img
+                                                    alt=""
+                                                    class="img-fluid"  [src]="variant.images" (click)="owlCar.to(i.toString())">
+                                                </li>
+                                              </ul>
+                                        <div class="product-description border-product">
+                                            <h6 class="product-title size-text">select size
+                                                <span><a (click)="open(content)">size chart</a></span>
+                                            </h6>
+                                            <div class="size-box" *ngIf="product.size">
+                                                    <ul>
+                                                      <li [ngClass]="{'active': selectedSize == size}" *ngFor="let size of product.size">
+                                                        <a [routerLink]="" (click)="changeSizeVariant(size)">{{size}}</a>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                            <h5 class="avalibility" *ngIf="counter <= 10"><span>In Stock</span></h5>
+                                            <h5 class="avalibility" *ngIf="counter > 10"><span>Out of Stock</span></h5>
+                                            <h6 class="product-title">quantity</h6>
+                                            <div class="qty-box">
+                                              <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                        <button type="button" (click)="decrement()" class="btn quantity-left-minus" data-type="minus" data-field="">
+                                                         <i class="fa fa-chevron-left"></i>
+                                                     </button>
+                                                 </span>
+                                                <input type="text"  name="quantity" disabled class="form-control input-number" value="{{counter}}">
+                                                <span class="input-group-prepend">
+                                                    <button type="button" (click)="increment()" class="btn quantity-right-plus" data-type="plus" data-field="">
+                                                        <i class="fa fa-chevron-right"></i>
+                                                    </button>
+                                                </span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buttons" *ngIf="!productsService?.catalogMode">
+                                            <a [routerLink]="" (click)="addToCart(product, counter)" class="btn btn-default primary-btn radius-0" [class.disabled]="counter > product.stock">add to cart</a>
+                                            <a [routerLink]="" (click)="buyNow(product, counter)" class="btn btn-default primary-btn radius-0" [class.disabled]="counter > product.stock">buy now</a>
+                                          </div>
+                                        <div class="border-product">
+                                            <h6 class="product-title">product details</h6>
+                                            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                                doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+                                                veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim
+                                                ipsam voluptatem,
+                                            </p>
+                                        </div>
+                                        <div class="border-product">
+                                            <h6 class="product-title mb-2">share it</h6>
+                                            <div class="product-icon">
+                                                <ul class="product-social">
+                                                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="https://plus.google.com/discover"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                                </ul>
+                                                <div class="d-inline-block" *ngIf="!productsService?.catalogMode">
+                                                    <button class="wishlist-btn" [class.active]="wishlist" (click)="addToWishlist(product)">
+                                                        <i class="fa fa-heart"></i>
+                                                        <span class="title-font">Add To WishList</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-product">
+                                            <h6 class="product-title">Frequently bought together</h6>
+                                            <div class="bundle">
+                                                <div class="bundle_img">
+                                                    <div class="img-box">
+                                                        <a href="javascript:void()"><img alt=""
+                                                                         class="img-fluid" src="assets/images/inner-page/category/4.jpg"></a>
+                                                    </div>
+                                                    <span class="plus">+</span>
+                                                    <div class="img-box">
+                                                        <a href="javascript:void()"><img alt=""
+                                                                         class="img-fluid" src="assets/images/inner-page/category/1.jpg"></a>
+                                                    </div>
+                                                    <span class="plus">+</span>
+                                                    <div class="img-box">
+                                                        <a href="javascript:void()"><img alt=""
+                                                                         class="img-fluid" src="assets/images/inner-page/category/5.jpg"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="bundle_detail">
+                                                    <div class="theme_checkbox">
+                                                        <label>this product: WOMEN PINK SHIRT <span class="price_product">$55</span>
+                                                            <input checked="checked" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label>black long skirt <span class="price_product">$20</span>
+                                                            <input checked="checked" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label>women heeled boots <span class="price_product">$15</span>
+                                                            <input checked="checked" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a class="btn btn-default primary-btn radius-0" href="javascript:void()">buy this
+                                                            bundle</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Size Modal -->
+                        <ng-template #content let-modal>
+                                <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Sheer Straight
+                                            Kurta</h5>
+                                        <button aria-label="Close" class="close" (click)="modal.close('Save click')" 
+                                                type="button">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img alt=""
+                                             class="img-fluid" src="assets/images/inner-page/product/size-chart.jpg">
+                                    </div>
+                        </ng-template>
+                        <section class="tab-product m-0 p-b-0">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-12">
+                                       <ngb-tabset>
+                                            <ngb-tab title="Description">
+                                              <ng-template ngbTabContent>
+                                                   <p class="p-b-0">Lorem Ipsum is simply dummy text of the printing and
+                                                       typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                       text ever since the 1500s, when an unknown printer took a galley of type and
+                                                       scrambled it to make a type specimen book. It has survived not only five
+                                                       centuries, but also the leap into electronic typesetting, remaining
+                                                       essentially unchanged. It was popularised in the 1960s with the release of
+                                                       Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                       desktop publishing software like Aldus PageMaker including versions of Lorem
+                                                       Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                       industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                                       the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                                       make a type specimen book. It has survived not only five centuries, but also
+                                                       the leap into electronic typesetting, remaining essentially unchanged. It
+                                                       was popularised in the 1960s with the release of Letraset sheets containing
+                                                       Lorem Ipsum passages, and more recently with desktop publishing software
+                                                       like Aldus PageMaker including versions of Lorem Ipsum.
+                                                   </p>
+                                              </ng-template>
+                                            </ngb-tab>
+                                            <ngb-tab title="Detail">
+                                                    <ng-template ngbTabContent>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                                            make a type specimen book. It has survived not only five centuries, but also
+                                                            the leap into electronic typesetting, remaining essentially unchanged. It
+                                                            was popularised in the 1960s with the release of Letraset sheets containing
+                                                            Lorem Ipsum passages, and more recently with desktop publishing software
+                                                            like Aldus PageMaker including versions of Lorem Ipsum.
+                                                        </p>
+                                                        <div class="single-product-tables">
+                                                            <table>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td>Febric</td>
+                                                                    <td>Chiffon</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Color</td>
+                                                                    <td>Red</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Material</td>
+                                                                    <td>Crepe printed</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td>Length</td>
+                                                                    <td>50 Inches</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Size</td>
+                                                                    <td>S, M, L .XXL</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </ng-template>
+                                            </ngb-tab>
+                                            <ngb-tab title="Video">
+                                                        <ng-template ngbTabContent>
+                                                                <div class="mt-3 text-center">
+                                                                        <iframe allow="autoplay; encrypted-media" allowfullscreen
+                                                                                height="315"
+                                                                                src="https://www.youtube.com/embed/BUWzX78Ye_8" width="560"></iframe>
+                                                                    </div>
+                                                        </ng-template>
+                                            </ngb-tab>
+                                            <ngb-tab title="Write Review">
+                                                            <ng-template ngbTabContent>
+                                                                    <form class="theme-form">
+                                                                            <div class="form-row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="media">
+                                                                                        <label>Rating</label>
+                                                                                        <div class="media-body ml-3">
+                                                                                            <div class="rating three-star">
+                                                                                                <i class="fa fa-star"></i>
+                                                                                                <i class="fa fa-star"></i>
+                                                                                                <i class="fa fa-star"></i>
+                                                                                                <i class="fa fa-star"></i>
+                                                                                                <i class="fa fa-star"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <label for="name">Name</label>
+                                                                                    <input class="form-control" id="name" placeholder="Enter Your name"
+                                                                                           required type="text">
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <label for="email">Email</label>
+                                                                                    <input class="form-control" id="email" placeholder="Email"
+                                                                                           required type="text">
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <label for="review">Review Title</label>
+                                                                                    <input class="form-control" id="review" placeholder="Enter your Review Subjects"
+                                                                                           required type="text">
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <label for="review">Review Title</label>
+                                                                                    <textarea class="form-control"
+                                                                                              id="exampleFormControlTextarea1"
+                                                                                              placeholder="Wrire Your Testimonial Here" rows="6"></textarea>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <button class="btn btn-default primary-btn radius-0" type="submit">
+                                                                                        Submit YOur Review
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                            </ng-template>
+                                            </ngb-tab>
+                                        </ngb-tabset>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+<!-- Section ends -->
+<app-ecommerce-footer></app-ecommerce-footer>

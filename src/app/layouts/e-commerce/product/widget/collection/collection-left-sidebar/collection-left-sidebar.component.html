@@ -1,0 +1,150 @@
+<div class="agency">
+    <app-ecommerce-header></app-ecommerce-header>
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section-main inner-2 breadcrumb-section-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-contain ">
+                    <div>
+                        <h2 class="breadcrumb-txt">Collection Page</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            
+                            <li><a href="javascript:void()">Collection pages</a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-angle-double-right"></i>Left Sidebar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end -->
+
+<!-- section start -->
+<section class="section-b-space">
+  <div class="collection-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- Collection Sidebar -->
+        <a  class="overlay-sidebar" [class.overlay-sidebar-open]="productsService.filterBar" (click)="closeOverlay()"></a>
+        <div class="col-sm-3 collection-filter" [class.filterBar]="productsService.filterBar">
+          <div class="coll_sidebar_sticky">
+            <div class="collection-filter-block">
+              <app-categories></app-categories>
+            </div>
+            <div class="collection-filter-block">
+              <app-brand [tagsFilters]="tags" (tagFilters)="updateTagFilters($event)" *ngIf="tags.length"></app-brand>
+              <app-color [colorsFilters]="colors" (colorFilters)="updateColorFilters($event)" *ngIf="colors.length"></app-color>
+              <app-price (priceFilters)="updatePriceFilters($event)"></app-price>
+            </div>
+            <app-new-product></app-new-product>
+          </div>
+        </div>
+        <!-- End Collection Sidebar -->
+        <div class="collection-content col">
+          <div class="page-main-content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="top-banner-wrapper">
+                    <a [routerLink]="'/e-commerce/left-sidebar/collection/new'"><img src="assets/images/inner-page/banner.jpg" class="img-fluid" alt=""></a>
+                    <div class="top-banner-content small-section">
+                      <h4>fashion</h4>
+                      <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                    </div>
+                  </div>
+                  <div class="collection-product-wrapper">
+                    <!-- Filter Block Products -->
+                    <div class="product-top-filter">
+                      <div class="container-fluid p-0">
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <div class="filter-main-btn">
+                              <span class="filter-btn btn btn-theme btn-default primary-btn radius-0" (click)="toggleFilter()">
+                                <i class="fa fa-filter" aria-hidden="true"></i> Filter
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="product-filter-content">
+                              <div class="search-count">
+                                <h5>Showing Products 1-{{filterItems().length}}</h5>
+                              </div>
+                              <div class="collection-view">
+                                  <ul>
+                                      <li><i class="fa fa-th grid-layout-view"  (click)="grid4()"></i></li>
+                                      <li><i  (click)="listOpen()" class="fa fa-list-ul list-layout-view"></i></li>
+                                  </ul>
+                              </div>
+                              <div class="collection-grid-view"  *ngIf="gridOptions">
+                                <ul>
+                                    <li>
+                                        <img alt="" class="product-2-layout-view"
+                                             src="assets/images/inner-page/icon/2.png"  (click)="grid2()" >
+                                    </li>
+                                    <li>
+                                        <img alt="" class="product-3-layout-view"
+                                             src="assets/images/inner-page/icon/3.png"  (click)="grid3()" >
+                                    </li>
+                                    <li>
+                                        <img alt="" class="product-4-layout-view"
+                                             src="assets/images/inner-page/icon/4.png" (click)="grid4()">
+                                    </li>
+                                </ul>
+                              </div>
+                              <div class="product-page-filter">
+                                <select (change)="onChangeSorting($event.target.value)">
+                                  <option value="asc">Sorting items</option>
+                                  <option value="asc">Ascending Order</option>
+                                  <option value="desc">Descending Order</option>
+                                  <option value="a-z">Alphabetically, A-Z</option>
+                                  <option value="z-a">Alphabetically, Z-A</option>
+                                  <option value="low">Price, low to high</option>
+                                  <option value="high">Price, high to low</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Block Products -->
+                    <!-- Display Products -->
+                    <div class="product-wrapper-grid" [class.list-view]="listView" >
+                      <div class="container-fluid">
+                        <div class="row" [@Animation]="animation">
+                          <div [class.col-xl-2]="col_xl_2" [class.col-xl-12]="col_xl_12" [class.col-xl-3]="col_xl_3" [class.col-xl-4]="col_xl_4" [class.col-md-6]="col_md_6" class="col-grid-box" 
+                              *ngFor="let product of filterItems() | orderBy:sortByOrder">
+                            <div class="product-box">
+                              <app-product-box class="list-product" [products]="product"></app-product-box>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 text-center section-b-space mt-5 no-found" *ngIf="!filterItems().length">
+                            <img src="assets/images/empty-search.jpg" class="img-fluid mb-4">
+                            <h3>Sorry! Couldn't find the product you were looking For!!!    </h3>
+                            <p>Please check if you have misspelt something or try searching with other words.</p>
+                            <a [routerLink]="'/e-commerce'" class="btn btn-default primary-btn ra-dius-0 m-t-10">continue shopping</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section End -->
+
+<app-ecommerce-footer></app-ecommerce-footer>
+</div>

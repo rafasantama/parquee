@@ -1,0 +1,79 @@
+<!-- Nav Start-->
+<header class="ecommerce">
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <nav>
+                  <a class="logo-erapper" href="javascript:void()"><img alt="" class="img-fluid"
+                                                        src="assets/images/logo/5.png"></a>
+                 <app-menu></app-menu>
+                  <div class="top-header-right">
+                      <ul>
+                          <li class="search">
+                              <a aria-expanded="false" data-toggle="dropdown" href="javascript:void()" id="dropdownMenuButton">
+                                  <i class="icon-search"></i>
+                              </a>
+                              <div aria-labelledby="dropdownMenuButton" class="dropdown-menu dropdown-menu-right">
+                                  <form class="form-inline search-form">
+                                      <div class="form-group">
+                                          <label class="sr-only">Email</label>
+                                          <input class="form-control-plaintext" placeholder="Search...."
+                                                 type="search">
+                                          <span class="d-sm-none mobile-search">
+                              </span>
+                                      </div>
+                                  </form>
+                              </div>
+                          </li>
+                          <li class="cart">
+                              <a>
+                                  <i class="icon-shopping-cart-full" (click)="showItem = !showItem"></i>
+                              </a>
+                              <span class="cart_qty_cls">{{shoppingCartItems.length}}</span>
+                              <div class="dropdown-menu dropdown-menu-right" [class.show]="showItem">
+                                <ul class="shopping-cart" *ngIf='shoppingCartItems.length'>
+                                    <li *ngFor="let item of shoppingCartItems">
+                                      <div class="media">
+                                        <a [routerLink]="['/e-commerce/left-sidebar/product/', item.product.id]"><img class="mr-3" [src]="item.product.img" alt="Generic placeholder image"></a>
+                                        <div class="media-body">
+                                          <a [routerLink]="['/home/left-sidebar/product', item.product.id]"><h4>{{ item.product.name }}</h4></a>
+                                          <h4><span>{{ item.quantity }} x {{ item.product.price | currency:productService?.currency:'symbol' }}</span></h4>
+                                        </div>
+                                      </div>
+                                      <div class="close-circle">
+                                        <a (click)="removeItem(item)"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="total">
+                                        <h5>subtotal : <span>{{ getTotal() | async | currency:productService?.currency:'symbol'}}</span></h5>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="buttons">
+                                        <a [routerLink]="'/e-commerce/cart'" class="view-cart">view cart</a>
+                                        <a [routerLink]="'/e-commerce/checkout'" class="checkout">checkout</a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li class="account ">
+                              <a aria-expanded="false" data-toggle="dropdown" href="javascript:void()" id="dropdownMenuButton2">
+                                  <i class="icon-user"></i>
+                              </a>
+                              <div aria-labelledby="dropdownMenuButton2" class="dropdown-menu dropdown-menu-right">
+                                  <a class="dropdown-item" href="javascript:void()">Login</a>
+                                  <a class="dropdown-item" href="javascript:void()">Account</a>
+                                  <a class="dropdown-item" href="javascript:void()">Whishlist</a>
+                                  <a class="dropdown-item" href="javascript:void()">Checkout</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- Nav end-->

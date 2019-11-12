@@ -1,0 +1,16 @@
+<section class="agency breadcrumb-section" 
+        [ngClass]="url == '/features/breadcrumb-parallex-bg' ? 'bg1 bg-dark bg-fixed' :
+                   url == '/features/breadcrumb-bg' ? 'bg1 bg-dark' :
+                   url == '/features/breadcrumb-dark' ? 'bg-dark set-bg-dark' : ''"  *ngIf="title">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">{{title}}</h2>
+                <ul class="breadcrumb justify-content-center">
+                    <li><a href="javascript:void()">{{breadcrumbs?.parentBreadcrumb}}</a></li>
+                    <li>{{breadcrumbs?.childBreadcrumb}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

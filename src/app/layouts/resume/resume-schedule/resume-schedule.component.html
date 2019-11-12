@@ -1,0 +1,51 @@
+<!--schedule start-->
+<section class="resume schedule">
+  <div class="container">
+      <div class="title title2">
+          <div class="row">
+              <div class=" offset-md-2 col-md-8">
+                  <h6 class="font-primary borders main-text text-uppercase"><span>details</span></h6>
+                  <div class="sub-title">
+                      <div class="">
+                          <h2 class="title-text">services & experience</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+              <div class="cal-time">
+                  <div class="time">
+                      <h5 class="text-capitalize">Monday, September 30, 2018</h5>
+                  </div>
+              </div>
+              <div class="event-container scrollbar">
+                  <div>
+                      <div class=" cal-time events" *ngFor="let data of schedule">
+                          <div class="row">
+                              <div class="col-md-10">
+                                  <div class="schedule-event">
+                                      <h4 class="names">{{data.name}}</h4>
+                                      <img [src]="data.img" alt="" class="img-fluid schedule-img">
+                                      <p class="schedule-description">{{data.description}}</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="timing">
+                                      <h5 class="event-time">08:00</h5>
+                                      <div class="border-container">
+                                          <div class="border-dashed"></div>
+                                      </div>
+                                      <h5 class="event-time">10:00</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--schedule end-->

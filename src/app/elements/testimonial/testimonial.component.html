@@ -1,0 +1,240 @@
+
+<section class="saas1 testimonial videos testimonial-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center m-b-0"><span class="text-uppercase">testimonial 1</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="center-content">
+                    <div class="video w-100">
+                        <a class="button center-content">
+                            <img src="assets/images/saas1/testimonial-video-icon.png" (click)="openVerticallyCentered(content)" alt="video" class="img-fluid">
+                            <ng-template #content let-modal>
+                                    <div class="modal-body video-modal">
+                                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                                    </div>
+                            </ng-template>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial-slider">
+                    <owl-carousel-o [options]="testimonialcarouselOptions1" class="testimonial-carousel ">
+                        <ng-container *ngFor="let slide of testimonialcarousel1">
+                            <ng-template carouselSlide>
+                    <div class="testimonial">
+                        <div class="testimonial-box">
+                            <img [src]="slide.quote" alt="dot">
+                            <h6>{{slide.review}}</h6>
+                        </div>
+                    </div>
+                    <div class="testi-profile">
+                        <div class="media">
+                            <img class="" [src]="slide.userImg"
+                                 alt="profile-testimonial">
+                            <div class="media-body">
+                                <h5 class="mt-0">{{slide.userName}}</h5>
+                                <h6>{{slide.position}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </ng-template>
+                    </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="event testimonial set-relative bg bg-somos bg-color"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class=" text-white white-border">testimonial 2</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-1 margin-b">
+                <owl-carousel-o [options]="testimonialCarouselOptions2" class="testimonial">
+                    <ng-container *ngFor="let user of testimonialcarousel2">
+                        <ng-template carouselSlide >
+                          <div class="p-t-30">
+                            <div class="col-xl-10 offset-xl-1 col-12">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class=" testimonial-msg set-relative">
+                                            <img [src]="user.img" alt=""
+                                                class="img-fluid">
+                                            <div class="msg-box">
+                                                <div class="center-content">
+                                                    <img src="assets/images/event/testimonial/message.png" alt=""
+                                                        class="img-fluid set-abs">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 px-lg-4">
+                                        <div class="quotes set-relative m-b-30">
+                                            <img src="assets/images/event/testimonial/i1.png" alt=""
+                                                class="img-fluid set-abs left-quote">
+                                            <div class="quote-text">
+                                                <h5>"When you innovate, you make mistakes.It is best to admit them
+                                                    quickly,
+                                                    & get on with improving your other innovations."</h5>
+                                            </div>
+                                            <img src="assets/images/event/testimonial/i2.png" alt=""
+                                                class="img-fluid set-abs right-quote">
+                                        </div>
+                                        <div class="rating align-items-center">
+                                            <div class="stars">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="name">Jhon Denal - <span> UI Designer</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="app2 team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class="">testimonial 3</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="teamcarouselOptions3" class="team-slider">
+                    <ng-container *ngFor="let team of testimonialcarousel3">
+                        <ng-template carouselSlide class="item">
+                            <div class="team-container">
+                                <img [src]="team.img" alt="" class="img-fluid members">
+                                <div class="text-center">
+                                    <h5 class="name text-center">{{team.name}}</h5>
+                                    <h6 class="post text-center ">{{team.designation}}</h6>
+                                    <p class="team-para text-center">{{team.description}}</p>
+                                </div>
+                            </div>
+                        </ng-template>
+                        </ng-container>
+                        </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gym testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center text-uppercase m-b-0"><span class="text-white white-border">testimonial 4</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <owl-carousel-o [options]="testimonialCarouselOptions4" class=" testimonial-slider">
+                    <ng-container *ngFor="let user of testimonialcarousel4">
+                        <ng-template carouselSlide class="item">
+                            <div class="">
+                                <img [src]="user.img" alt="" class="img-fluid m-auto">
+                                <div class="text-center testimonial-info">
+                                    <p class="p-light testimonial-para">Lorem Ipsum is simply dummy text of the printing
+                                        and
+                                        typesetting industry. Lorem
+                                        Ipsum
+                                        has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown
+                                        printer took a galley of type and scrambled it to.</p>
+                                    <div class="testimonial-name">
+                                        <h5 class="text-white name">Alan Lakor</h5>
+                                    </div>
+                                    <div class="testimonial-post">
+                                        <h6 class="text-white post">CEO OF SC.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="agency testimonial format testimonial-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="format-container m-b-50">
+                    <h6 class="borders-before text-uppercase font-600  text-white">
+                        <span class="color-white">Happy Clients</span>
+                    </h6>
+                    <div class="format-head-text">
+                        <h2 class=" text-white">We Will Ready For <span class="block-span">Your Services</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <owl-carousel-o [options]="testimonialCarouselOptions5" class="testimonial-slider">
+                    <ng-container *ngFor="let user of testimonialcarousel5">
+                        <ng-template carouselSlide class="item">
+                            <div class="testimonial-container testimonial-container2 m-0">
+                                <div class="d-flex">
+                                    <img [src]="user.img" alt="" class="img-fluid m-r-25">
+                                    <div class="center-content">
+                                        <h6 class="name">{{user.name}}</h6>
+                                        <h6 class="post text-center  font-primary">{{user.designation}}</h6>
+                                    </div>
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="m-b-20 para2">{{user.review}}</p>
+                                    <div class="primary-border"></div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+

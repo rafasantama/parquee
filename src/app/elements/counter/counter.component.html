@@ -1,0 +1,132 @@
+<!-- counter-1 section start -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>counter 1</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="resume counter bg-pink">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter1">
+                        <div class="counters">
+                            <img [src]="data.img" alt="" class="img-fluid counter-img">
+                            <div class="counter-text">
+                                <h3 class="count-text counts"><span class="counter" [CountTo]="data.count"
+                                  [from]="0" [duration]="2"></span></h3>
+                                <h5 class="count-desc">{{data.type}}</h5>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</section>
+<!-- counter-1 section end -->
+
+<!-- counter-2 section start -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>counter 2</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gym counter  bg-img3 bg1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-6 counter-container" *ngFor="let data of counter2">
+                <div class="counters">
+                    <img [src]="data.img" alt="" class="img-fluid counter-img">
+                    <div class="counter-text">
+                        <div class="count-number">
+                            <h2 class="text-white counts"><span class="counter" [CountTo]="data.count"
+                              [from]="0" [duration]="2"></span></h2>
+                        </div>
+                        <div class="count-desc">
+                            <h5 class="text-white">{{data.type}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- counter-2 section end -->
+
+<!-- counter-3 section start -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>counter 3</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wedding counter bg-light-inner">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-3 col-6  counter-container" *ngFor="let data of counter3">
+                        <div class="counters">
+                            <img [src]="data.img" alt="" class="img-fluid counter-img">
+                            <div class="counter-text">
+                                <div class="count-number">
+                                    <h2 class="counts text-center">{{data.count}}</h2>
+                                </div>
+                                <h6 class="count-desc text-center">{{data.text}}</h6>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</section>
+<!-- counter-3 section end -->
+
+<!-- counter-4 section start -->
+<section class="p-b-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>counter 4</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="event counter set-relative bg bg-img3 bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter4">
+                <div class="counters">
+                    <img [src]="data.img" alt="" class="img-fluid counter-img">
+                    <div class="counter-text">
+                        <h2 class="count-number text-center text-white counts"><span class="counter" [CountTo]="data.count"
+                          [from]="0" [duration]="2"></span></h2>
+                        <h6 class="count-desc text-center text-white">{{data.type}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- counter-4 section end -->

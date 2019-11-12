@@ -1,0 +1,1096 @@
+[
+    {
+        "id": 1,
+        "img": "assets/images/inner-page/category/1.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "new",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Milton",
+            "NanoNine",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            },
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "img": "assets/images/inner-page/category/2.jpg",
+        "name": "Hola Mundo",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "new",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Carlsberg",
+            "Budweiser",
+            "Heineken"
+        ],
+        "variants": [
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            },
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "trending",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+            "blue"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+            
+        ]
+    },
+    {
+        "id": 4,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "trending",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "img": "assets/images/inner-page/category/8.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "trending",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Milton",
+            "NanoNine",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "img": "assets/images/inner-page/category/10.jpg",
+        "name": "Beer Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "trending",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Carlsberg",
+            "Budweiser",
+            "Heineken"
+        ],
+        "variants": [
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            },
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "trending",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+            "blue"
+        ],
+        "size": [
+            "0.5L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "western",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "img": "assets/images/inner-page/category/9.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "western",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L"
+        ],
+        "tags": [
+            "Milton",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            },
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            }           
+        ]
+    },
+    {
+        "id": 10,
+        "img": "assets/images/inner-page/category/14.jpg",
+        "name": "Beer Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "western",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Budweiser",
+            "Heineken"
+        ],
+        "variants": [
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            },
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            }         
+        ]
+    },
+    {
+        "id": 7,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "western",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+            "blue"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+            
+        ]
+    },
+    {
+        "id": 12,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "trending",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "img": "assets/images/inner-page/category/1.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "new",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Milton",
+            "NanoNine",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            },
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            }                 
+        ]
+    },
+    {
+        "id": 14,
+        "img": "assets/images/inner-page/category/10.jpg",
+        "name": "Beer Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "western",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Carlsberg",
+            "Budweiser",
+            "Heineken"
+        ],
+        "variants": [
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            },
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "western",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+            "blue"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+            
+        ]
+    },
+    {
+        "id": 16,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "western",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "img": "assets/images/inner-page/category/9.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "new",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "NanoNine",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            },
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            }                 
+        ]
+    },
+    {
+        "id": 18,
+        "img": "assets/images/inner-page/category/2.jpg",
+        "name": "Beer Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "new",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Carlsberg",
+            "Budweiser"
+        ],
+        "variants": [
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            },
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "new",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+          "blue"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+            
+        ]
+    },
+    {
+        "id": 20,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "new",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "img": "assets/images/inner-page/category/8.jpg",
+        "name": "matte black bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 100.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "category": "new",
+        "new": true,
+        "sale": false,
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Milton",
+            "NanoNine",
+            "Cello"
+        ],
+        "variants": [
+            {
+                "color": "darkslategray",
+                "images": "assets/images/inner-page/category/8.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/9.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/1.jpg"
+            }             
+        ]
+    },
+    {
+        "id": 22,
+        "img": "assets/images/inner-page/category/2.jpg",
+        "name": "Beer Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 260.00,
+        "status": "sale",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": false,
+        "category": "new",
+        "colors": [
+            "brown",
+            "gold",
+            "darkseagreen"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Kingfisher",
+            "Tuborg",
+            "Carlsberg",
+            "Budweiser"
+        ],
+        "variants": [
+            {
+                "color": "brown",
+                "images": "assets/images/inner-page/category/2.jpg"
+            },
+            {
+                "color": "gold",
+                "images": "assets/images/inner-page/category/10.jpg"
+            },
+            {
+                "color": "darkseagreen",
+                "images": "assets/images/inner-page/category/14.jpg"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "img": "assets/images/inner-page/category/12.jpg",
+        "name": "Cosmetic Bottle",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 360.00,
+        "status": "none",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": true,
+        "sale": false,
+        "category": "new",
+        "colors": [
+          "darkslategray",
+          "saddlebrown",
+          "black",
+          "blue"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "LAKMÉ",
+            "Miss Rose",
+            "VikriDA"
+        ],
+        "variants": [
+            {
+                "color": "darkred",
+                "images": "assets/images/inner-page/category/12.jpg"
+            },
+            {
+                "color": "saddlebrown",
+                "images": "assets/images/inner-page/category/4.jpg"
+            },
+            {
+                "color": "darkgreen",
+                "images": "assets/images/inner-page/category/15.jpg"
+            },
+            {
+                "color": "black",
+                "images": "assets/images/inner-page/category/16.jpg"
+            }
+            
+        ]
+    },
+    {
+        "id": 24,
+        "img": "assets/images/inner-page/category/3.jpg",
+        "name": "Coffee Bags",
+        "note": "Simply dummy text of the printing",
+        "discription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+        "discountPrice": 350.00,
+        "price": 526.00,
+        "status": "50%",
+        "stock": 5,
+        "review": "(250 review)",
+        "new": false,
+        "sale": true,
+        "category": "trending",
+        "colors": [
+            "steelblue",
+            "bisque",
+            "darkorange"
+        ],
+        "size": [
+            "0.5L",
+            "1L",
+            "2L"
+        ],
+        "tags": [
+            "Nescafé",
+            "Folgers",
+            "MaxwellHouse"
+        ],
+        "variants": [
+            {
+                "color": "steelblue",
+                "images": "assets/images/inner-page/category/3.jpg"
+            },
+            {
+                "color": "bisque",
+                "images": "assets/images/inner-page/category/6.jpg"
+            },
+            {
+                "color": "darkorange",
+                "images": "assets/images/inner-page/category/7.jpg"
+            }
+        ]
+    }
+]

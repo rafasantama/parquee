@@ -1,0 +1,33 @@
+<!-- services section Start-->
+<section class="services event" id="service">
+        <div class="circle">
+            </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+              <div class="title">
+                  <div class="main-title">
+                      <h2>Nuestro Trabajo</h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="para">Artciculamos el ecosistema habilitando oportunidades a los emprendedores.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4" *ngFor="let data of services">
+              <div class="service service-overlay" data-tilt data-tilt-max="6" data-tilt-speed="400"
+                   data-tilt-perspective="500">
+                  <div class="img-block">
+                      <img [src]="data.img" alt="" class="service-img img-fluid">
+                  </div>
+                  <div class="service-feature">
+                      <h4 class="feature-text">{{data.title}}</h4>
+                      <p>{{data.description}}</p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- services section end-->

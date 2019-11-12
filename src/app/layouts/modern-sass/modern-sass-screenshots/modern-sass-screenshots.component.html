@@ -1,0 +1,33 @@
+
+<!--slider css start-->
+<section class="saas2 laptop-slider bg-gradient" id="screenshot">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="title">
+                  <div class="main-title">
+                      <h2 class="text-white">screen shot</h2>
+                  </div>
+                  <div class="sub-title">
+                      <p class="sub-title-para text-white">We believe we have created the most efficient SaaS landing
+                          page for
+                          your users.
+                          Landing page with features that will convince you to use it for your SaaS business.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid">
+      <div class="slider-container">
+          <owl-carousel-o [options]="screenshotscarouselOptions" class="trainers-slider">
+              <ng-container *ngFor="let screenshot of screenshots">
+                  <ng-template carouselSlide class="item">
+                  <img [src]="screenshot.img" alt="" class="img-fluid">
+                  </ng-template>
+                  </ng-container>
+                  </owl-carousel-o>
+      </div>
+  </div>
+</section>
+<!--slider css start-->

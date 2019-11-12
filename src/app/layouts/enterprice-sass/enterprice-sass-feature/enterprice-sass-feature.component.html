@@ -1,0 +1,42 @@
+<!-- feature section-->
+<section id="feature" class="saas1 service">
+    <div class="about-chat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="title">
+                        <img src="assets/images/saas1/title-logo.png" alt="title-logo" class="img-fluid">
+                        <div class="main-title">
+                            <h2>
+                                <span class="theme-color">A</span>wesome <span class="theme-color">F</span>eatures
+
+                            </h2>
+                        </div>
+                        <hr>
+                        <div class="sub-title">
+                            <p class="p-padding">We believe we have created the most efficient SaaS landing page for
+                                your
+                                users. Landing page with features that will convince you to use it for your SaaS
+                                business.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 service-container" *ngFor="let data of features">
+                    <div class="chat-box">
+                        <img [src]="data.img" alt="stay-connected">
+                        <div class="feature-content">
+                            <h4 class="service-heading"> {{data.title}} <span
+                                    class="theme-color">{{data.subTitle}}</span>
+                            </h4>
+                            <hr>
+                            <p>{{data.description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end feature section -->

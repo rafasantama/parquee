@@ -1,0 +1,98 @@
+<!--testimonial section start-->
+<section class="event testimonial set-relative bg bg-grupo bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2 class=" text-white">Nuestras Historias</h2>
+                    </div>
+                    <!-- <div class="sub-title">
+                        <P class="text-white">Register now and reserve your seat for this
+                            <span>year's unice,</span> the largest <span>web development</span> and online marketing
+                            <span>conference in UK,</span> covering everything you need to know in order to develop a
+                            successful online business.</P>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-1 margin-b">
+                <owl-carousel-o [options]="testimonialCarouselOptions" class="testimonial">
+                    <ng-container *ngFor="let user of users">
+                        <ng-template carouselSlide >
+                            <div class="p-t-30">
+                            <div class="col-xl-10 offset-xl-1 col-12">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class=" testimonial-msg set-relative">
+                                            <img [src]="user.img" alt=""
+                                                class="img-fluid">
+                                            <div class="msg-box">
+                                                <div class="center-content">
+                                                    <img src="assets/images/event/testimonial/message.png" alt=""
+                                                        class="img-fluid set-abs">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 px-lg-4">
+                                        <div class="quotes set-relative m-b-30">
+                                            <img src="assets/images/event/testimonial/i1.png" alt=""
+                                                class="img-fluid set-abs left-quote">
+                                            <div class="quote-text">
+                                                <h5>{{user.testimonio}}</h5>
+                                            </div>
+                                            <img src="assets/images/event/testimonial/i2.png" alt=""
+                                                class="img-fluid set-abs right-quote">
+                                        </div>
+                                        <div class="rating align-items-center">
+                                            <div class="stars">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="name">Rafael Santa María - <span> BITS Ingeniería</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter">
+                    <div class="counters">
+                        <img [src]="data.img" alt="" class="img-fluid counter-img">
+                        <div class="counter-text">
+                            <h2 class="count-number text-center text-white counts"><span class="counter" [CountTo]="data.count"
+                              [from]="0" [duration]="2"></span></h2>
+                            <h6 class="count-desc text-center text-white">{{data.type}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter">
+                <div class="counters">
+                    <img [src]="data.img" alt="" class="img-fluid counter-img">
+                    <div class="counter-text">
+                        <h2 class="count-number text-center text-white counts"><span class="counter" [CountTo]="data.count"
+                          [from]="0" [duration]="2"></span></h2>
+                        <h6 class="count-desc text-center text-white">{{data.type}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonial section end-->

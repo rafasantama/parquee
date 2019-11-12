@@ -1,0 +1,18 @@
+<!--counter start-->
+<section class="resume counter bg-pink">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter">
+              <div class="counters">
+                  <img [src]="data.img" alt="" class="img-fluid counter-img">
+                  <div class="counter-text">
+                      <h3 class="count-text counts"><span class="counter" [CountTo]="data.count"
+                        [from]="0" [duration]="2"></span></h3>
+                      <h5 class="count-desc">{{data.type}}</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--counter end-->

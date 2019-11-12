@@ -1,0 +1,30 @@
+<section class="ecommerce feature-product">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <div class="title title2">
+          <div class="sub-title">
+            <div>
+              <h2 class="title-text">Newest Product</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <owl-carousel-o [options]="productSliderOptions" class="product-slider">
+          <ng-container *ngFor="let data of products">
+            <ng-template carouselSlide>
+              <div>
+                <div class="product-box">
+                  <a class="badge badge-light" href="javascript:void(0)" *ngIf="data.sale">On sale</a>
+                    <a class="badge badge-dark" href="javascript:void(0)" *ngIf="data.new">New</a>
+                    <app-product-box [products]="data"></app-product-box>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,162 @@
+<!--expert section start-->
+<section class="yoga trainers" id="screenshot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title title2">
+                    <h2 class="">our expert</h2>
+                    <img src="assets/images/yoga-img/logo/wave-blue.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <owl-carousel-o [options]="expertCarouselOptions" class="trainers-slider"> 
+        <ng-container *ngFor="let expert of experts">
+          <ng-template carouselSlide class="item">
+              <img [src]="expert.img" alt="" class="img-fluid">
+              <div class="text-center trainers-info">
+                  <h4 class="m-b-10">Ethan Robbines</h4>
+                  <div class="socials-lists">
+                      <ul class="socials-horizontal justify-content-center">
+                          <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                          <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                          <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                          <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+        <!-- <div class="owl-carousel owl-theme trainers-slider" id="trainers-slider">
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/3.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/2.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/4.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/5.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/3.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/2.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/2.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/1.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/yoga-img/expert/4.jpg" alt="" class="img-fluid">
+                <div class="text-center trainers-info">
+                    <h4 class=" m-b-10">Ethan Robbines</h4>
+                    <div class="socials-lists">
+                        <ul class="socials-horizontal justify-content-center">
+                            <li><a href="javascript:void()"><i class="fa fa-facebook center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-twitter center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-google center-content" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void()"><i class="fa fa-instagram center-content" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--expert section end-->

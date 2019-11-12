@@ -1,0 +1,23 @@
+<!-- Login-popup section start -->
+<section class="login-popup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="text-center">
+                    <h2 class="m-b-20">click here for the Map popup</h2>
+                    <a class="popup-with-form btn btn-default primary-btn" (click)="openVerticallyCentered(content)">click here
+                    </a>
+                    <ng-template #content let-modal>
+                            <div class="modal-body video-modal">
+                                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="//www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"></iframe>
+                            </div>
+                          </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login-popup section end -->

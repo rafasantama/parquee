@@ -1,0 +1,82 @@
+<div class="img-wrapper">
+    <div class="front">
+      <a>
+        <img alt="" class="img-fluid" [routerLink]="['/e-commerce/left-sidebar/product/', products.id]" routerLinkActive="active" [src]="products.img">
+      </a>
+    </div>
+    <div class="cart-info cart-wrap">
+          <button [routerLink]="['/e-commerce/cart']" routerLinkActive="active" (click)="addToCart(products)" [attr.data-target]="'#addtocart'+products.id" data-toggle="modal" title="Add to cart"><i class="fa fa-shopping-cart" ></i></button>
+          <a [routerLink]="" (click)="addToWishlist(products)" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+          <a [routerLink]="" (click)="open(content, products.id)" [attr.data-target]="'#quick-view'+products.id" data-toggle="modal" title="Quick View"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a [routerLink]="['/e-commerce/compare']" routerLinkActive="active" (click)="addToCompare(products)" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+        </div>
+  </div>
+  <div class="product-detail">
+    <a href="product-page(no-sidebar).html">
+      <h6>{{products.name}}</h6>
+    </a>
+    <p>{{products.discription}}</p>
+    <h4>${{products.price}}</h4>
+  </div>
+
+  <!-- Quick view Popup -->
+<ng-template #content let-modal>
+    <div class="modal-body">
+      <button type="button" class="close" (click)="modal.close('Save click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="row">
+        <div class="col-lg-6  col-xs-12">
+          <div class="quick-view-img">
+            <img [src]="products.img" alt="" class="img-fluid">
+           </div>
+          </div>
+          <div class="col-lg-6 rtl-text">
+            <div class="product-right">
+              <h2>{{products.name}}</h2>
+              <h3>{{products.price | currency:productsService?.currency:'symbol'}} <del><span class="money">{{products.salePrice | currency:productsService?.currency:'symbol'}}</span></del> </h3>
+              <ul class="color-variant" *ngIf="products.variants && !productsService?.catalogMode">
+                  <li [class]="variant.color" [ngStyle]="{'background-color': variant.color}"  *ngFor="let variant of products.variants let i = index"></li>
+                </ul>
+              <div class="border-product">
+                <h6 class="product-title">product details</h6>
+                <p>{{products.discription | slice:0:200}}</p>
+              </div>
+              <div class="product-description border-product">
+                <div class="size-box" *ngIf="products.size">
+                  <ul>
+                    <li [ngClass]="{'active': selectedSize == size}" *ngFor="let size of products.size">
+                      <a (click)="changeVariantSize(size)">{{size}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <h5 class="avalibility" *ngIf="counter <= products.stock"><span>In Stock</span></h5>
+                <h5 class="avalibility" *ngIf="counter > products.stock"><span>Out of Stock</span></h5>
+                <h6 class="product-title">quantity</h6>
+                <div class="qty-box">
+                  <div class="input-group">
+                    <span class="input-group-prepend">
+                      <button type="button" class="btn quantity-left-minus" (click)="decrement()" data-type="minus" data-field="">
+                          <i class="fa fa-chevron-left"></i>
+                      </button>
+                    </span>
+                    <input type="text" name="quantity" disabled class="form-control input-number" value="{{counter}}">
+                    <span class="input-group-prepend">
+                      <button type="button" class="btn quantity-right-plus" (click)="increment()" data-type="plus" data-field="">
+                          <i class="fa fa-chevron-right"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-buttons">
+                <a [routerLink]="" (click)="addToCart(products, counter)" class="btn btn-default primary-btn radius-0" >add to cart</a>
+                <a [routerLink]="['/e-commerce/left-sidebar/product', products.id]" (click)="modal.close('Save click')" class="btn btn-default primary-btn radius-0">view detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </ng-template>
+
+

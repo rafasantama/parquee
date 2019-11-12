@@ -1,0 +1,42 @@
+<!-- testimonial section Start-->
+<section class="wedding testimonial wishes-bg bg set-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="title">
+                    <img src="assets/images/wedding-img/bottom.png" alt=""
+                         class="img-fluid title-img">
+                    <div class="main-title">
+                        <h2 class="gradient-text">friends wishes</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit
+                            anim id est laborum. Sedut perspiciatis unde omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <owl-carousel-o [options]="testimonialCarouselOptions">
+                <ng-container *ngFor="let testimonial of testimonials">
+                  <ng-template carouselSlide class="item">
+                      <div class="testimonial-container">
+                          <div class="border-around">
+                              <img [src]="testimonial.img" alt=""
+                                   class="img-fluid m-auto">
+                              <div class="text-center testimonial-info">
+                                  <p class="testimonial-para">{{testimonial.review}}</p>
+                                  <h4 class="">{{testimonial.name}}</h4>
+                                  <h6>{{testimonial.designation}}</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+           </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial section end-->

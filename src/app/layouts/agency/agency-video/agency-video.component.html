@@ -1,0 +1,47 @@
+<!--video section start-->
+<section class="agency video video-bg p-0" id="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="text-center">
+                    <div class="d-inline-block">
+                        <img src="assets/images/agency/videos/bg.png" alt="" class="img-fluid bg-video">
+                        <div class="abs-center">
+                            <div>
+                                <div class="m-b-20">
+                                    <a href="javascript:void(0)" class="button">
+                                        <img src="assets/images/agency/videos/icon.png" alt=""
+                                            class="img-fluid video-img" (click)="openVerticallyCentered(content)">
+                                    </a>
+                                    <ng-template #content let-modal>
+                                        <div class="modal-body video-modal">
+                                            <button type="button" class="close" aria-label="Close"
+                                                (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <iframe class="mfp-iframe" frameborder="0" allowfullscreen=""
+                                                src="//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1"></iframe>
+                                        </div>
+                                    </ng-template>
+                                </div>
+                                <div>
+                                    <a href="" class="video w-100">
+                                        <img src="assets/images/agency/videos/title-icon.png" alt=""
+                                            class="img-fluid m-b-20">
+                                    </a>
+                                    <div class="">
+                                        <h3 class="video-heading text-white text-center"> Amazing Videos & Presentations
+                                        </h3>
+                                        <h6 class="video-text text-white  text-center">We create. We Develop. We
+                                            Inspire.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--video section end-->

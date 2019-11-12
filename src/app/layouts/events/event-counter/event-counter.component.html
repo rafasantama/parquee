@@ -1,0 +1,32 @@
+<!--counter section start-->
+<section class="event counter set-relative">
+    <div class="circle">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2 style='color:#FF8000'>Nuestras Cifras</h2>
+                    </div>
+                    <div class="sub-title">
+                        <P>El Parque del Emprendimientos opera gracias a una
+                            <span>estrategica red de aliados</span> articulados a lo largo del <span>ecosystema de emprendimiento en Medellín</span> posicionandose como
+                            <span>una de las incubadoras top a nivel mundial</span>, impulsando la red de emprendimientos de alto impacto de la ciudad</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 counter-container" *ngFor="let data of counter">
+                <div class="counters">
+                    <img [src]="data.img" alt="" class="img-fluid counter-img">
+                    <div class="counter-text">
+                        <h2 class="count-number text-center text-red counts"><span class="counter" [CountTo]="data.count"
+                            [from]="0" [duration]="2"></span></h2>
+                        <h6 class="count-desc text-center text-red">{{data.type}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--counter section end-->

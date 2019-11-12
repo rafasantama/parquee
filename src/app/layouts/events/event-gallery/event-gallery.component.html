@@ -1,0 +1,69 @@
+<!--gallery section start-->
+<section class="event portfolio-section zoom-gallery set-relative">
+    <div class="circle">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2><span>our</span> schedule</h2>
+                    </div>
+                    <div class="sub-title">
+                        <P>Register now and reserve your seat for this <span>year's unice,</span> the
+                            largest <span>web development</span> and online marketing <span>conference in UK,</span>
+                            covering everything you need to know in order to develop a successful online business.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 filter-section">
+                <div class="filter-container isotopeFilters">
+                    <ul class="list-inline filter">
+                        <li [ngClass]="{active : activeFilter == 'all'}"><a href="javascript:void(0)" (click)="filterImg('all')" data-filter="*">All </a></li>
+                        <li [ngClass]="{active : activeFilter == 'fashion'}"><a href="javascript:void(0)" (click)="filterImg('fashion')" data-filter=".fashion">Fashion</a></li>
+                        <li [ngClass]="{active : activeFilter == 'bags'}"><a href="javascript:void(0)" (click)="filterImg('bags')" data-filter=".bags">Bags</a></li>
+                        <li [ngClass]="{active : activeFilter == 'shoes'}"><a href="javascript:void(0)" (click)="filterImg('shoes')"data-filter=".shoes">Shoes</a></li>
+                        <li [ngClass]="{active : activeFilter== 'watch'}"><a href="javascript:void(0)"  (click)="filterImg('watch')" data-filter=".watch">Watch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ngx-masonry [options]="myOptions" #masonry [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'all'">
+            <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+              *ngFor="let img of urlsBags">
+              <img  class="img-fluid" [src]="img">
+            </div>
+          </ngx-masonry>
+          <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'fashion'">
+              <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                *ngFor="let img of urlsAll">
+                <img  class="img-fluid" [src]="img">
+              </div>
+            </ngx-masonry>
+            <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'bags'">
+                <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                  *ngFor="let img of urlsFashion">
+                  <img  class="img-fluid" [src]="img">
+                </div>
+              </ngx-masonry>
+              <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'shoes'">
+                  <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                    *ngFor="let img of urlsFashion">
+                    <img  class="img-fluid" [src]="img">
+                  </div>
+                </ngx-masonry>
+                <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry-grid m-layout margin_cls" *ngIf="activeFilter == 'watch'">
+                    <div ngxMasonryItem class="m-width m-3-col" (load)="updateMasonryLayout = !updateMasonryLayout"
+                      *ngFor="let img of urlsBags">
+                      <img  class="img-fluid" [src]="img">
+                    </div>
+                </ngx-masonry>
+
+
+
+    </div>
+</section>
+<!--gallery section end-->
+ 

@@ -1,0 +1,35 @@
+
+<section class="event speaker bg bg-somos bg-color" id="speaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title3">
+                    <div class="main-title">
+                        <h2 class="text-white">Nuestro Equipo</h2>
+                    </div>
+                    <div class="text-white sub-title">
+                        <P class="text-white">Nuestro equipo esta conformado por <span>profesionales altamente capacitados,</span> especialdiades en las diferentes <span>dimensiones de negocios</span> permitiendonos brindar una asesoría integral que <span>garantice el exito de nuestros emprendedores</span>
+                            y logrando reducir los indices de mortalidad de las startup.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 speker-container text-white" *ngFor="let data of experts">
+                <div class="text-white text-center">
+                    <div class="team-img">
+                        <img [src]="data.img" alt="" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="javascript:void()"><i class="fa fa-linkedin center-content" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <h5 class="e-name text-center text-white">{{data.name}}</h5>
+                        <h6 class="post text-center text-white">{{data.designation}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

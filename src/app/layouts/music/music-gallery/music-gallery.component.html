@@ -1,0 +1,31 @@
+<!-- gallery section Start-->
+<section class="music gallery bg-gallery bg-shadow-top-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="title title4">
+                    <div class="main-title">
+                        <h2>gallery</h2>
+                    </div>
+                    <div class="sub-title">
+                        <p>Latest Photo Our Music Event</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o class="gallery-slider" [options]="galleryCarouselOptions">
+                    <ng-container *ngFor="let image of gallery">
+                        <ng-template carouselSlide class="item">
+                                        <img [src]="image.img" alt="">
+                                        <div class="abs-center w-100 text-container">
+                                            <h5 class="text-white overlay-text text-center">Special Music Event<span>2018</span></h5>
+                                        </div>
+                                        <div class="overlay"></div>           
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+          </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section end-->

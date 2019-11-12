@@ -1,0 +1,19 @@
+<!-- counter section Start-->
+<section class="wedding counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6  counter-container" *ngFor="let data of counter">
+                <div class="counters">
+                    <img [src]="data.img" alt="" class="img-fluid counter-img">
+                    <div class="counter-text">
+                        <div class="count-number">
+                            <h2 class="counts text-center">{{data.count}}</h2>
+                        </div>
+                        <h6 class="count-desc text-center">{{data.text}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- counter section end-->
